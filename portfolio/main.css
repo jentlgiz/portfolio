@@ -1,0 +1,25 @@
+/* general  */
+
+:root {
+    --white: #FFFFFF; /* text */
+    --raisin-black: #222222; /* background */
+    --brilliant-red: #FF3C3C; /* hover */
+    --spanish-gray: #989898; /* input label */
+    --eerie-black: #1E1E1E; /* inner alignment */
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+#header {
+    background-color: var(--raisin-black);
+}
+
+#header .container {
+    background-color: palevioletred;
+    max-width: 1440px;
+    max-height: 60px;
+}
