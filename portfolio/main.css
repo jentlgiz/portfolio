@@ -125,9 +125,7 @@ img {
 .hero-content {
     position: relative;
     display: block;
-    background-color: orange;
-    width: 740px;
-    /* max-width: 740px; */
+    max-width: 740px;
     max-height: 862px;
 }
 
@@ -174,6 +172,7 @@ img {
     position: absolute;
     bottom: 245px;
     left: 65px;
+    width: 310px;
     font-family: Oswald;
     font-weight: 400;
     font-style: Regular;
@@ -183,17 +182,20 @@ img {
 }
 
 .hero-content__scroll {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
     position: absolute;
     bottom: 60px;
-    left: 65px;
-    font-family: Mulish;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: right;
+    left: 66px;
+    display: flex;
+    align-items: center;
+    width: 119px;
+    height: 24px;
+    gap: 8px;
+    opacity: 1;
+    color:var(--white);
 }
+
+.hero-content__scroll:hover {
+    color:var(--brilliant-red);
+}
+
+
