@@ -93,16 +93,17 @@ img {
 }
 
 #hero .container {
-    background-color: rgb(37, 8, 37);
+    background-color: rgb(190, 134, 190);
     display: flex;
 }
 
 .hero-caption {
+    max-height: 862px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: aquamarine;
+    padding: 60px 0px 60px 20px;
 }
 
 .hero-caption__text {
@@ -118,5 +119,81 @@ img {
     background-color: var(--white);
     height: 536px;
     width: 1px;
+    margin: 10px 0px 15px 0px;
 }
 
+.hero-content {
+    position: relative;
+    display: block;
+    background-color: orange;
+    width: 740px;
+    /* max-width: 740px; */
+    max-height: 862px;
+}
+
+.hero-content__data {
+    position: absolute;
+    top: 160px;
+    left: 75px;
+    gap: 65px;
+    display: flex;
+    height: 86px;
+    width: 341px;
+    font-family: Oswald;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 54px;
+}
+
+.hero-content__text {
+    display: flex;
+}
+
+.hero-content__text p {
+    font-family: Mulish;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+}
+
+.hero-content h1 {
+    position: absolute;
+    bottom: 315px;
+    left: 65px;
+    font-family: Oswald;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 116px;
+    line-height: 132px;
+    text-transform: uppercase;
+}
+
+.hero-content h3 {
+    position: absolute;
+    bottom: 245px;
+    left: 65px;
+    font-family: Oswald;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.hero-content__scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    bottom: 60px;
+    left: 65px;
+    font-family: Mulish;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+}
