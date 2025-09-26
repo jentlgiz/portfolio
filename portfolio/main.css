@@ -86,3 +86,37 @@ img {
     display: none;
 }
 
+/* hero section */
+
+#hero {
+    background-color: var(--raisin-black);
+}
+
+#hero .container {
+    background-color: rgb(37, 8, 37);
+    display: flex;
+}
+
+.hero-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aquamarine;
+}
+
+.hero-caption__text {
+    writing-mode: sideways-lr;
+    color: var(--white);
+    font-family: Mulish;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.line {
+    background-color: var(--white);
+    height: 536px;
+    width: 1px;
+}
+
