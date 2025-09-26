@@ -1,0 +1,47 @@
+/* tablet */
+
+/* header  */
+
+@media (max-width: 1439px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .button-nav {
+        display: block;
+        padding: 0px 20px 0px 20px;
+    }
+
+    .burger-nav {
+        position: relative;
+        background-color: var(--white);
+        height: 2px;
+        width: 12px;
+    }
+
+    .burger-nav::before {
+        position: absolute;
+        bottom: -10px;
+        left: -7px;
+        background-color: var(--white);
+        content: "";
+        height: 2px;
+        width: 20px;
+    }
+
+    .disabled:hover {
+      background-color: transparent;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 380px;
+    }
+}
