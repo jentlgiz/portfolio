@@ -95,6 +95,8 @@ img {
 #hero .container {
     background-color: rgb(190, 134, 190);
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .hero-caption {
@@ -104,6 +106,7 @@ img {
     align-items: center;
     justify-content: space-between;
     padding: 60px 0px 60px 20px;
+    background-color: rgb(84, 84, 3);
 }
 
 .hero-caption__text {
@@ -125,14 +128,14 @@ img {
 .hero-content {
     position: relative;
     display: block;
-    max-width: 740px;
+    width: 740px;
     max-height: 862px;
+    background-color: brown;
 }
 
 .hero-content__data {
     position: absolute;
     top: 160px;
-    left: 75px;
     gap: 65px;
     display: flex;
     height: 86px;
@@ -159,7 +162,6 @@ img {
 .hero-content h1 {
     position: absolute;
     bottom: 315px;
-    left: 65px;
     font-family: Oswald;
     font-weight: 300;
     font-style: Light;
@@ -171,7 +173,6 @@ img {
 .hero-content h3 {
     position: absolute;
     bottom: 245px;
-    left: 65px;
     width: 310px;
     font-family: Oswald;
     font-weight: 400;
@@ -184,7 +185,6 @@ img {
 .hero-content__scroll {
     position: absolute;
     bottom: 60px;
-    left: 66px;
     display: flex;
     align-items: center;
     width: 119px;
@@ -196,6 +196,29 @@ img {
 
 .hero-content__scroll:hover {
     color:var(--brilliant-red);
+    transition: 0.5s;
+}
+
+.hero-content__img {
+    background-color: rgb(13, 203, 127);
+    width: 220px;
+    height: 220px;
+}
+
+.hero-content__img-1 {
+    width: 220px;
+    height: 220px;
+    background-color: red;
+    background-image: url(./image/png/img-10.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center -35px;
+}
+
+.hero-content__bio {
+    background-color: blue;
+    max-width: 280px;
+    margin-right: 20px;
 }
 
 
