@@ -52,6 +52,7 @@
 
     .hero-caption {
         max-height: 862px;
+        display: block;
     }
 
     .hero-caption__text:first-child {
@@ -87,7 +88,71 @@
 /* mobile */
 
 @media (max-width: 767px) {
-    .container {
+
+    #hero .container {
+        display: contents;
+        max-height: 888px;
         max-width: 380px;
+    }
+
+    .hero-caption {
+        display: none;
+    }
+
+    .hero-content {
+        position: relative;
+        width: 340px;
+        height: 382px;
+    }
+
+    .hero-content__bio {
+        position: relative;
+        height: 486px;
+        width: 340px;
+        margin-left: 25px;
+    }
+
+    .hero-content__img-2 {
+        position: absolute;
+        right: 5px;
+        top: 21px;
+    }
+
+    .hero-content__bio-text {
+        position: absolute;
+        bottom: 38px;
+        right: 7px;
+    }
+
+    .hero-content h1 {
+        position: absolute;
+        top: 185px;
+        right: 5px;
+        font-family: Oswald;
+        font-weight: 300;
+        font-style: Light;
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        width: 340px;
+        height: 128px;
+    }
+
+    .hero-content__scroll {
+        display: none;
+    }
+
+    .hero-content__data {
+        position: absolute;
+        top: 60px;
+        right: 2px;
+        width: 341px;
+    }
+
+    .hero-content h3 {
+        position: absolute;
+        bottom: 0px;
+        right: 33px;
     }
 }
