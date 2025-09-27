@@ -52,7 +52,6 @@
 
     .hero-caption {
         max-height: 862px;
-        display: block;
     }
 
     .hero-caption__text:first-child {
@@ -82,6 +81,34 @@
 
     .hero-content__scroll  {
         margin-left: 39px;
+    }
+
+    /* about section */
+
+    #about .container {
+        display: flex;
+        flex-direction: column;
+        width: 768px;
+        height: 1932px;
+        gap: 40px;
+        padding: 60px 20px 60px 20px;
+    }
+
+    .about-content__img-1, .about-content__img-2 {
+        width: 728px;
+        height: 728px;
+    }
+
+    .about-content__img-3  {
+        display: none;
+    }
+
+    .about-content__img-1 {
+        background-position: center -121px;
+    }
+
+    .about-content__img-2 {
+        background-position: center -121px;
     }
 }
 
