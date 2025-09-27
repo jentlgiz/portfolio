@@ -115,6 +115,22 @@
 /* mobile */
 
 @media (max-width: 767px) {
+    /* general */
+
+    .button-nav {
+    display: block;
+    padding: 0px 20px 11px 20px;
+    }
+
+    .logo-wrapper {
+        padding-top: 5px;
+    }
+
+    #header .container {
+        padding: 18px 0px 37px 20px;
+    }
+
+    /* hero section */
 
     #hero .container {
         display: contents;
@@ -142,18 +158,18 @@
     .hero-content__img-2 {
         position: absolute;
         right: 5px;
-        top: 21px;
+        top: 1px;
     }
 
     .hero-content__bio-text {
         position: absolute;
-        bottom: 38px;
+        bottom: 60px;
         right: 7px;
     }
 
     .hero-content h1 {
         position: absolute;
-        top: 185px;
+        top: 165px;
         right: 5px;
         font-family: Oswald;
         font-weight: 300;
@@ -172,14 +188,43 @@
 
     .hero-content__data {
         position: absolute;
-        top: 60px;
+        top: 40px;
         right: 2px;
         width: 341px;
     }
 
     .hero-content h3 {
         position: absolute;
-        bottom: 0px;
+        bottom: 18px;
         right: 33px;
     }
+
+    /* about section */
+
+    #about .container {
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        height: 1276px;
+        gap: 40px;
+        padding: 60px 20px 60px 20px;
+    }
+
+    .about-content__img-1, .about-content__img-2 {
+        width: 340px;
+        height: 340px;
+    }
+
+    .about-content__img-3  {
+        display: none;
+    }
+
+    .about-content__img-1 {
+        background-position: center -55px;
+    }
+
+    .about-content__img-2 {
+        background-position: center -56px;
+    }
+
 }
