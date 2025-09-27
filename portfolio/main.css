@@ -50,7 +50,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 0px 20px 20px;
+    padding: 18px 0px 18px 20px;
 }
 
 .header-nav__list {
@@ -93,10 +93,10 @@ img {
 }
 
 #hero .container {
-    background-color: rgb(190, 134, 190);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color: var(--white);
 }
 
 .hero-caption {
@@ -104,14 +104,12 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 60px 0px 60px 20px;
-    background-color: rgb(84, 84, 3);
 }
 
 .hero-caption__text {
     writing-mode: sideways-lr;
-    color: var(--white);
     font-family: Mulish;
     font-weight: 500;
     font-size: 12px;
@@ -120,7 +118,7 @@ img {
 
 .line {
     background-color: var(--white);
-    height: 536px;
+    height: 537px;
     width: 1px;
     margin: 10px 0px 15px 0px;
 }
@@ -130,16 +128,16 @@ img {
     display: block;
     width: 740px;
     max-height: 862px;
-    background-color: brown;
+    margin-left: 23px;
 }
 
 .hero-content__data {
     position: absolute;
     top: 160px;
-    gap: 65px;
+    gap: 55px;
     display: flex;
     height: 86px;
-    width: 341px;
+    width: 361px;
     font-family: Oswald;
     font-weight: 300;
     font-size: 48px;
@@ -148,20 +146,22 @@ img {
 
 .hero-content__text {
     display: flex;
+    gap: 8px;
 }
 
 .hero-content__text p {
+    width: 116px;
+    margin-top: 7px;
     font-family: Mulish;
     font-weight: 400;
     font-style: Regular;
     font-size: 16px;
     line-height: 24px;
-    text-align: right;
 }
 
 .hero-content h1 {
     position: absolute;
-    bottom: 315px;
+    bottom: 312px;
     font-family: Oswald;
     font-weight: 300;
     font-style: Light;
@@ -172,7 +172,7 @@ img {
 
 .hero-content h3 {
     position: absolute;
-    bottom: 245px;
+    bottom: 244px;
     width: 310px;
     font-family: Oswald;
     font-weight: 400;
@@ -184,14 +184,14 @@ img {
 
 .hero-content__scroll {
     position: absolute;
-    bottom: 60px;
+    bottom: 62px;
+    left: 3px;
     display: flex;
     align-items: center;
     width: 119px;
     height: 24px;
-    gap: 8px;
+    gap: 10px;
     opacity: 1;
-    color:var(--white);
 }
 
 .hero-content__scroll:hover {
@@ -200,15 +200,15 @@ img {
 }
 
 .hero-content__img {
-    background-color: rgb(13, 203, 127);
+    position: relative;
     width: 220px;
-    height: 220px;
 }
 
 .hero-content__img-1 {
+    position: absolute;
+    top: 321px;
     width: 220px;
     height: 220px;
-    background-color: red;
     background-image: url(./image/png/img-10.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -216,9 +216,36 @@ img {
 }
 
 .hero-content__bio {
-    background-color: blue;
-    max-width: 280px;
+    position: relative;
+    width: 280px;
     margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content__img-2 {
+    position: absolute;
+    top: 60px;
+    height: 374px;
+    width: 280px;
+    background-image: url(./image/png/img-11.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.hero-content__bio-text {
+    position: absolute;
+    bottom: 60px;
+    right: 1px;
+    width: 220px;
+    height: 72px;
+    font-family: Mulish;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
 }
 
 
