@@ -201,6 +201,7 @@ img {
 
 .hero-content__img {
     position: relative;
+    display: block;
     width: 220px;
 }
 
