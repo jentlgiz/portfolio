@@ -80,11 +80,14 @@ p, li {
     letter-spacing: 0%;
 }
 
-/* header */
+/* background colors */
 
-#header {
+#header, #hero, #portfolio, #faq {
     background-color: var(--raisin-black);
+    color:var(--white);
 }
+
+/* header */
 
 #header .container {
     display: flex;
@@ -125,15 +128,10 @@ p, li {
 
 /* hero section */
 
-#hero {
-    background-color: var(--raisin-black);
-}
-
 #hero .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: var(--white);
 }
 
 .hero-caption {
@@ -313,8 +311,6 @@ p, li {
 /* portfolio section */
 
 #portfolio {
-    background-color: var(--raisin-black);
-    color: var(--white);
     padding: 60px 20px 60px 20px;
 }
 
@@ -382,10 +378,6 @@ p, li {
 }
 
 /* pricing section */
-
-#price {
-    color: var(--eerie-black);
-}
 
 #price .container {
     max-height: 736px;
@@ -492,7 +484,36 @@ p, li {
 
 /* faq section */
 
-#faq {
-    background-color: var(--raisin-black);
-    color:var(--white);
+#faq .container {
+    background-color: orangered;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 60px 20px 60px 20px;
+}
+
+.faq-content {
+    background-color: rgb(143, 200, 57);
+    width: 680px;
+    height: 640px;
+}
+
+.faq-content__accordion {
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    width: 680px;
+    cursor: pointer;
+}
+
+.faq-content__accordion h3 {
+    background-color: yellow;
+}
+
+.faq-content__accordion svg {
+    background-color: palevioletred;
+    margin-bottom: 5px;
+    margin-right: 1px;
 }
