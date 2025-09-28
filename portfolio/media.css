@@ -1,3 +1,6 @@
+/* disabled hover effects */
+
+
 /* tablet */
 
 @media (max-width: 1439px) {
@@ -83,7 +86,6 @@
 
     #about {
         height: 1932px;
-        width: 768px;
     }
 
     #about .container {
@@ -113,8 +115,7 @@
     /* portfolio section */
 
     #portfolio {
-        width: 768px;
-        height: 914px;
+        max-height: 914px;
         padding: 60px 0px 60px 0px;
     }
 
@@ -140,6 +141,11 @@
     }
 
 /* price section  */
+    #price {
+        width: 768px;
+        height: 1256px;
+        padding: 60px 20px 60px 20px;
+    }
 
     .price-cards {
         display: grid;
@@ -147,6 +153,9 @@
         grid-template-rows: 1fr;
         grid-column-gap: 20px;
         grid-row-gap: 0px;
+        width: 728px;
+        height: 1020px;
+        gap: 20px;
     }
 }
 
@@ -239,11 +248,13 @@
 
     /* about section */
 
+    #about {
+        height: 1276px;
+    }
+
     #about .container {
         display: flex;
         flex-direction: column;
-        width: 380px;
-        height: 1276px;
         gap: 40px;
         padding: 60px 20px 60px 20px;
     }
@@ -264,5 +275,25 @@
     .about-content__img-2 {
         background-position: center -56px;
     }
+
+    /* price section  */
+    #price {
+        width: 380px;
+        height: 2320px;
+        padding: 60px 20px 60px 20px;
+    }
+
+    .price-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+        width: 340px;
+        height: 2060px;
+        gap: 20px;
+    }
+
+
 
 }
