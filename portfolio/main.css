@@ -82,7 +82,7 @@ p, li {
 
 /* background colors */
 
-#header, #hero, #portfolio, #faq {
+#header, #hero, #portfolio, #faq, .footer__contacts {
     background-color: var(--raisin-black);
     color:var(--white);
 }
@@ -424,13 +424,13 @@ p, li {
 
 .price-card__wrapper:hover {
     border: 1px solid #FF3C3C;
-    transition: 0.6s ease-in-out;
+    transition: 0.3s ease-in-out;
     color:#000000;
 }
 
 .price-card__wrapper:hover .booking__button {
     background-color: #FF3C3C;
-    transition: 0.6s ease-in-out;
+    transition: 0.3s ease-in-out;
     color:var(--eerie-black);
 }
 
@@ -448,7 +448,7 @@ p, li {
     gap: 6px;
 }
 
-.price-card__button {
+.price-card__button, .button-wrapper {
     color:var(--white);
     display: flex;
     flex-direction: column;
@@ -553,13 +553,7 @@ p, li {
 
 /* footer */
 
-#footer {
-    background-color: fuchsia;
-}
-
-#footer .container {
-    max-width: 1440px;
-    background-color: yellow;
+.footer-container {
     display: flex;
     flex-direction: column;
     padding-top: 40px;
@@ -567,30 +561,64 @@ p, li {
 }
 
 .footer__label {
-    background-color: rgb(218, 145, 29);
     display: flex;
     justify-content: center;
 }
 
 .footer-nav__list {
-    background-color: greenyellow;
+    display: grid;
+    grid-template-columns: 110px 102px 106px 87px 136px;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.footer-nav__list li {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0px 20px 0px 20px;
+    border-left-width: 1px;
+}
+
+.footer-nav__list li:last-child {
+    width: 136px;
 }
 
 .footer__booking-box {
-    background-color: blueviolet;
     display: flex;
+    flex-direction: row;
     gap: 8px;
     padding: 0px 20px 0px 20px;
-    flex-direction: column;
     justify-content: center;
 }
 
 .footer__contacts {
-    background-color: green;
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
 
-.input-wrapper {
-    background-color: aqua;
+.button-wrapper:hover .booking__button {
+    background-color: #FF3C3C;
+    transition: 0.5s ease-in-out;
+    color:var(--eerie-black);
+}
+
+input[type=text] {
+    width: 380px;
+    height: 60px;
+    padding-right: 12px;
+    padding-left: 12px;
+    border-width: 1px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: Oswald;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #989898;
 }
