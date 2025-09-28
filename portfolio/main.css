@@ -42,7 +42,7 @@ img {
 
 /* text, headings */
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, .accordion-heading {
     font-family: Oswald;
     letter-spacing: 0%;
     text-transform: uppercase;
@@ -55,7 +55,7 @@ h1 {
     line-height: 132px;
 }
 
-h2, h3, h4, p, li {
+h2, h3, h4, p, li, .accordion-heading {
     font-weight: 400;
     font-style: Regular;
 }
@@ -65,7 +65,7 @@ h2 {
     line-height: 40px;
 }
 
-h3 {
+h3, .accordion-heading {
     font-size: 20px;
     line-height: 28px;
 }
@@ -485,7 +485,6 @@ p, li {
 /* faq section */
 
 #faq .container {
-    background-color: orangered;
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -493,27 +492,47 @@ p, li {
 }
 
 .faq-content {
-    background-color: rgb(143, 200, 57);
     width: 680px;
     height: 640px;
 }
 
 .faq-content__accordion {
-    background-color: burlywood;
+    background-color:--raisin-black;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.faq-content__accordion-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 64px;
     width: 680px;
+    outline: none;
+    background-color: var(--raisin-black);
+    color:var(--white);
+    border: none;
     cursor: pointer;
 }
 
-.faq-content__accordion h3 {
-    background-color: yellow;
+.faq-content__accordion-box:hover {
+    background-color: var(--raisin-black);
+    color:var(--brilliant-red);
 }
 
-.faq-content__accordion svg {
-    background-color: palevioletred;
+.faq-content__accordion-box:hover .accordion__button {
+    background-color: var(--raisin-black);
+    color:var(--brilliant-red);
+}
+
+.accordion__button {
     margin-bottom: 5px;
-    margin-right: 1px;
+    margin-right: 4px;
+}
+
+.faq-content__panel-answer {
+    height: 92px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom-width: 1px;
+    border-bottom: 1px solid #FFFFFF;
 }
