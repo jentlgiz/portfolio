@@ -621,4 +621,11 @@ input[type=text] {
     letter-spacing: 0%;
     text-transform: uppercase;
     color: #989898;
+    cursor: pointer;
+}
+
+input[type=text]:hover {
+    border: 1px solid #FF3C3C;
+    transition: 0.3s ease-in-out;
+    color:#000000;
 }
