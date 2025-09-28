@@ -479,7 +479,7 @@ img {
 .price-card__wrapper:hover .price__button {
     background-color: #FF3C3C;
     transition: 0.6s ease-in-out;
-    color:var(--white);
+    color:var(--eerie-black);
 }
 
 .price-card__outline {
