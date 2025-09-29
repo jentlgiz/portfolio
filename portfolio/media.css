@@ -152,7 +152,7 @@
         padding-top: 40px;
     }
 
-    /* price section  */
+    /* price section */
 
     #price {
         width: 768px;
@@ -216,14 +216,20 @@
     }
 }
 
+
 /* mobile */
 
 @media (max-width: 767px) {
-    /* general */
+
+    /* header */
+
+    #header {
+        padding-bottom: 2px;
+    }
 
     .button-nav {
-    display: block;
-    padding: 0px 20px 11px 20px;
+        display: block;
+        padding: 0px 20px 11px 20px;
     }
 
     .logo-wrapper {
@@ -334,26 +340,48 @@
         background-position: center -56px;
     }
 
-    /* price section  */
+    /* portfolio section */
+
+    #portfolio {
+        margin-bottom: 21px;
+    }
+
+    .portfolio-content__wrapper {
+        margin: 0 auto;
+    }
+
+    .portfolio-slider__track-wrapper {
+        max-width: 380px;
+    }
+
+    /* price section */
 
     #price {
         width: 380px;
         height: 2320px;
-        padding: 60px 20px 60px 20px;
     }
 
     .price-cards {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: 1fr;
-        grid-column-gap: 20px;
-        grid-row-gap: 0px;
         width: 340px;
         height: 2060px;
         gap: 20px;
+        padding-top: 0px;
+        padding-left: 8px;
     }
 
     /* faq section */
+
+    .faq-content__title  {
+        width: 340px;
+        margin-bottom: 40px;
+    }
+
+    .faq-content__panel-answer {
+        width: 340px;
+    }
 
     #faq .container {
         max-width: 380px;
@@ -365,14 +393,6 @@
         grid-row-gap: 0px;
     }
 
-    .footer-container {
-        max-width: 380px;
-        height: 644px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
     .faq-content__accordion-box {
         max-width: 340px;
         max-height: 676px;
@@ -382,7 +402,11 @@
         height: 164px;
     }
 
-    /* footer section */
+    /* footer */
+
+    .footer-container {
+        height: 644px;
+    }
 
     .footer__booking-box {
         height: 196px;
@@ -391,6 +415,7 @@
         flex-direction: column;
         align-items: center;
         gap: 8px;
+        margin-bottom: 20px;
     }
 
     .footer__label {
@@ -406,8 +431,19 @@
         align-items: center;
     }
 
-    input[type=text] {
+    .button-wrapper {
         width: 340px;
-        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__button {
+        width: 340px;
+    }
+
+    input {
+        max-width: 340px;
+        border: 1px solid #222222;
     }
 }
