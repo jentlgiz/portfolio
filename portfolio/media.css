@@ -1,5 +1,71 @@
 /* disabled hover effects */
 
+   @media (hover: hover) {
+    .price-card__wrapper:hover {
+        border: 1px solid #FF3C3C;
+        transition: 0.3s ease-in-out;
+        color:#000000;
+    }
+
+    .price-card__wrapper:hover .booking__button {
+        background-color: #FF3C3C;
+        transition: 0.3s ease-in-out;
+        color:var(--eerie-black)
+    }
+
+    .header-nav__list a:hover,
+    .footer-nav__list a:hover {
+        color: var(--brilliant-red);
+        transition: 0.5s;
+    }
+
+    .header-nav__list a:active,
+    .footer-nav__list a:active {
+        color: var(--brilliant-red);
+        transition: 0.5s;
+    }
+
+    .hero-content__scroll:hover {
+        color:var(--brilliant-red);
+        transition: 0.5s;
+    }
+
+    .faq-content__accordion-box:hover {
+        background-color: var(--raisin-black);
+        color:var(--brilliant-red);
+        transition: 0.4s ease-in;
+    }
+
+    .faq-content__accordion-box:hover .accordion__button {
+        background-color: var(--raisin-black);
+        color:var(--brilliant-red);
+        transition: 0.4s ease-in;
+    }
+
+    .button-wrapper:hover .booking__button {
+        background-color: #FF3C3C;
+        transition: 0.5s ease-in-out;
+        color:var(--eerie-black);
+    }
+
+    input[type=text]:hover {
+        border: 1px solid #FF3C3C;
+        transition: 0.3s ease-in-out;
+        color:#000000;
+    }
+
+    input[type=text]:active {
+        border: 1px solid #FF3C3C;
+        transition: 0.3s ease-in-out;
+        color:#000000;
+    }
+
+    input[type=text]:focus {
+        border: 1px solid #FF3C3C;
+        transition: 0.3s ease-in-out;
+        color:#000000;
+    }
+}
 
 /* tablet */
 
