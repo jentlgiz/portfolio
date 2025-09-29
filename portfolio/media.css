@@ -10,6 +10,11 @@
         max-width: 768px;
     }
 
+    header, main, footer {
+        max-width: 768px;
+        overflow: hidden;
+    }
+
     /* header */
 
     .header-nav {
@@ -85,14 +90,15 @@
     /* about section */
 
     #about {
+        max-width: 768px;
         height: 1932px;
     }
 
     #about .container {
+        max-width: 768px;
         display: flex;
         flex-direction: column;
         gap: 40px;
-        padding: 60px 20px 60px 20px;
     }
 
     .about-content__img-1, .about-content__img-2 {
@@ -102,6 +108,7 @@
 
     .about-content__img-3  {
         display: none;
+        max-width: 728px;
     }
 
     .about-content__img-1 {
@@ -140,7 +147,8 @@
         padding-top: 40px;
     }
 
-/* price section  */
+    /* price section  */
+
     #price {
         width: 768px;
         height: 1256px;
@@ -153,9 +161,36 @@
         grid-template-rows: 1fr;
         grid-column-gap: 20px;
         grid-row-gap: 0px;
-        width: 728px;
+        width: 700px;
         height: 1020px;
         gap: 20px;
+    }
+
+    /* faq section */
+
+    #faq .container {
+        max-width: 768px;
+        max-height: 840px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .footer__booking-box {
+        max-width: 768px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 256px 256px 200px;
+        grid-template-rows: 1fr;
+        grid-column-gap: 8px;
+        grid-row-gap: 0px;
+        height: 80px;
+    }
+
+    .button-wrapper {
+        max-width: 200px;
     }
 }
 
@@ -259,7 +294,8 @@
         padding: 60px 20px 60px 20px;
     }
 
-    .about-content__img-1, .about-content__img-2 {
+    .about-content__img-1,
+    .about-content__img-2 {
         width: 340px;
         height: 340px;
     }
@@ -277,6 +313,7 @@
     }
 
     /* price section  */
+
     #price {
         width: 380px;
         height: 2320px;
@@ -294,6 +331,61 @@
         gap: 20px;
     }
 
+    /* faq section */
 
+    #faq .container {
+        max-width: 380px;
+        max-height: 976px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
 
+    .footer-container {
+        max-width: 380px;
+        height: 644px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .faq-content__accordion-box {
+        max-width: 340px;
+        max-height: 676px;
+    }
+
+    .faq-content__panel-answer {
+        height: 164px;
+    }
+
+    /* footer section */
+
+    .footer__booking-box {
+        height: 196px;
+        max-width: 380px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .footer__label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-nav__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type=text] {
+        width: 340px;
+        height: 60px;
+    }
 }
