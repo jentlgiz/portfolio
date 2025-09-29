@@ -631,11 +631,12 @@ p, li {
 
 .button-wrapper:hover .booking__button {
     background-color: #FF3C3C;
-    transition: 0.5s ease-in-out;
+    transition: 0.4s ease-in-out;
     color:var(--eerie-black);
 }
 
 input[type=text] {
+    border: 1px solid #1E1E1E;
     width: 380px;
     height: 60px;
     padding-right: 12px;
@@ -650,11 +651,22 @@ input[type=text] {
     line-height: 24px;
     letter-spacing: 0%;
     text-transform: uppercase;
-    color: #989898;
     cursor: pointer;
 }
 
 input[type=text]:hover {
+    border: 1px solid #FF3C3C;
+    transition: 0.3s ease-in-out;
+    color:#000000;
+}
+
+input[type=text]:active {
+    border: 1px solid #FF3C3C;
+    transition: 0.3s ease-in-out;
+    color:#000000;
+}
+
+input[type=text]:focus {
     border: 1px solid #FF3C3C;
     transition: 0.3s ease-in-out;
     color:#000000;

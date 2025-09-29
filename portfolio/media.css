@@ -1,6 +1,6 @@
 /* disabled hover effects */
 
-   @media (hover: hover) and (pointer: fine) {
+   @media (hover: hover) {
     .price-card__wrapper:hover {
         border: 1px solid #FF3C3C;
         transition: 0.3s ease-in-out;
@@ -53,15 +53,19 @@
         transition: 0.3s ease-in-out;
         color:#000000;
     }
+
+    input[type=text]:active {
+        border: 1px solid #FF3C3C;
+        transition: 0.3s ease-in-out;
+        color:#000000;
+    }
+
+    input[type=text]:focus {
+        border: 1px solid #FF3C3C;
+        transition: 0.3s ease-in-out;
+        color:#000000;
+    }
 }
-
-/* breakpoints */
-/* 465 till 625 */
-/* 625 768 */
-/* 768 800 */
-/* 800 1200 */
-
-
 
 /* tablet */
 
