@@ -262,6 +262,7 @@ p, li {
     right: 1px;
     width: 220px;
     height: 72px;
+    text-align: right;
 }
 
 /* about section */
@@ -323,7 +324,7 @@ p, li {
 }
 
 .portfolio-content {
-    max-width: 380px;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -407,6 +408,11 @@ p, li {
 .price-card__list {
     display: flex;
     flex-direction: column;
+}
+
+.price-card__list ul {
+    display: flex;
+    flex-direction: column;
     gap: 4px;
 }
 
@@ -418,7 +424,10 @@ p, li {
     flex-direction: column;
     justify-content: space-between;
     border-width: 1px;
-    padding: 24px;
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
     cursor: pointer;
 }
 
@@ -437,7 +446,7 @@ p, li {
 .price-card__outline {
     display: flex;
     flex-direction: column;
-    gap: 11px;
+    gap: 12px;
 }
 
 .price-card__list li {
@@ -460,6 +469,7 @@ p, li {
 .price-card__button p {
     font-style: Italic;
     color:var(--eerie-black);
+    line-height: 20px;
 }
 
 .button-mini {
@@ -557,12 +567,12 @@ p, li {
     display: flex;
     flex-direction: column;
     padding-top: 40px;
-    gap: 20px;
 }
 
 .footer__label {
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 .footer-nav__list {
@@ -586,11 +596,18 @@ p, li {
 }
 
 .footer__booking-box {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    padding: 0px 20px 0px 20px;
+    display: grid;
     justify-content: center;
+    grid-template-columns: 380px 380px 200px;
+    grid-template-rows: 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 0px;
+    height: 80px;
+}
+
+.footer__button {
+    width: 200px;
+    padding-left: 10px;
 }
 
 .footer__contacts {
