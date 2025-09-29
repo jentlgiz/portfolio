@@ -147,6 +147,7 @@ p, li {
 }
 
 .hero-caption__text {
+    /* sideways-lr на vertical-lr  + rotate 180 */
     writing-mode: sideways-lr;
     font-family: Mulish;
     font-weight: 500;

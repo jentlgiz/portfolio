@@ -17,6 +17,10 @@
 
     /* header */
 
+    #header {
+        padding-bottom: 3px;
+    }
+
     .header-nav {
         display: none;
     }
@@ -31,6 +35,7 @@
         background-color: var(--white);
         height: 2px;
         width: 12px;
+        margin-top: 6px;
     }
 
     .burger-nav::before {
@@ -152,18 +157,19 @@
     #price {
         width: 768px;
         height: 1256px;
-        padding: 60px 20px 60px 20px;
+        padding-top: 0px;
     }
 
     .price-cards {
+        padding-left: 32px;
         display: grid;
         grid-template-columns: repeat(2, 2fr);
         grid-template-rows: 1fr;
-        grid-column-gap: 20px;
+        grid-column-gap: 0px;
         grid-row-gap: 0px;
         width: 700px;
         height: 1020px;
-        gap: 20px;
+        gap: 15px;
     }
 
     /* faq section */
@@ -178,6 +184,18 @@
         grid-row-gap: 0px;
     }
 
+    .faq-content__title  {
+        margin-bottom: 40px;
+    }
+
+    .faq-content__accordion-box  {
+        width: 728px;
+    }
+
+    .faq-content__panel-answer {
+        width: 728px;
+    }
+
     .footer__booking-box {
         max-width: 768px;
         display: grid;
@@ -186,11 +204,15 @@
         grid-template-rows: 1fr;
         grid-column-gap: 8px;
         grid-row-gap: 0px;
-        height: 80px;
     }
 
     .button-wrapper {
         max-width: 200px;
+    }
+
+    input {
+        max-width: 256px;
+        border: 1px solid #222222;
     }
 }
 
