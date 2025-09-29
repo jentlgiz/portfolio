@@ -17,6 +17,10 @@
 
     /* header */
 
+    #header {
+        padding-bottom: 3px;
+    }
+
     .header-nav {
         display: none;
     }
@@ -31,6 +35,7 @@
         background-color: var(--white);
         height: 2px;
         width: 12px;
+        margin-top: 6px;
     }
 
     .burger-nav::before {
@@ -147,23 +152,24 @@
         padding-top: 40px;
     }
 
-    /* price section  */
+    /* price section */
 
     #price {
         width: 768px;
         height: 1256px;
-        padding: 60px 20px 60px 20px;
+        padding-top: 0px;
     }
 
     .price-cards {
+        padding-left: 32px;
         display: grid;
         grid-template-columns: repeat(2, 2fr);
         grid-template-rows: 1fr;
-        grid-column-gap: 20px;
+        grid-column-gap: 0px;
         grid-row-gap: 0px;
         width: 700px;
         height: 1020px;
-        gap: 20px;
+        gap: 15px;
     }
 
     /* faq section */
@@ -178,6 +184,18 @@
         grid-row-gap: 0px;
     }
 
+    .faq-content__title  {
+        margin-bottom: 40px;
+    }
+
+    .faq-content__accordion-box  {
+        width: 728px;
+    }
+
+    .faq-content__panel-answer {
+        width: 728px;
+    }
+
     .footer__booking-box {
         max-width: 768px;
         display: grid;
@@ -186,22 +204,32 @@
         grid-template-rows: 1fr;
         grid-column-gap: 8px;
         grid-row-gap: 0px;
-        height: 80px;
     }
 
     .button-wrapper {
         max-width: 200px;
     }
+
+    input {
+        max-width: 256px;
+        border: 1px solid #222222;
+    }
 }
+
 
 /* mobile */
 
 @media (max-width: 767px) {
-    /* general */
+
+    /* header */
+
+    #header {
+        padding-bottom: 2px;
+    }
 
     .button-nav {
-    display: block;
-    padding: 0px 20px 11px 20px;
+        display: block;
+        padding: 0px 20px 11px 20px;
     }
 
     .logo-wrapper {
@@ -312,26 +340,48 @@
         background-position: center -56px;
     }
 
-    /* price section  */
+    /* portfolio section */
+
+    #portfolio {
+        margin-bottom: 21px;
+    }
+
+    .portfolio-content__wrapper {
+        margin: 0 auto;
+    }
+
+    .portfolio-slider__track-wrapper {
+        max-width: 380px;
+    }
+
+    /* price section */
 
     #price {
         width: 380px;
         height: 2320px;
-        padding: 60px 20px 60px 20px;
     }
 
     .price-cards {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: 1fr;
-        grid-column-gap: 20px;
-        grid-row-gap: 0px;
         width: 340px;
         height: 2060px;
         gap: 20px;
+        padding-top: 0px;
+        padding-left: 8px;
     }
 
     /* faq section */
+
+    .faq-content__title  {
+        width: 340px;
+        margin-bottom: 40px;
+    }
+
+    .faq-content__panel-answer {
+        width: 340px;
+    }
 
     #faq .container {
         max-width: 380px;
@@ -343,14 +393,6 @@
         grid-row-gap: 0px;
     }
 
-    .footer-container {
-        max-width: 380px;
-        height: 644px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
     .faq-content__accordion-box {
         max-width: 340px;
         max-height: 676px;
@@ -360,7 +402,11 @@
         height: 164px;
     }
 
-    /* footer section */
+    /* footer */
+
+    .footer-container {
+        height: 644px;
+    }
 
     .footer__booking-box {
         height: 196px;
@@ -369,6 +415,7 @@
         flex-direction: column;
         align-items: center;
         gap: 8px;
+        margin-bottom: 20px;
     }
 
     .footer__label {
@@ -384,8 +431,19 @@
         align-items: center;
     }
 
-    input[type=text] {
+    .button-wrapper {
         width: 340px;
-        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__button {
+        width: 340px;
+    }
+
+    input {
+        max-width: 340px;
+        border: 1px solid #222222;
     }
 }

@@ -42,7 +42,8 @@ img {
 
 /* text, headings */
 
-h1, h2, h3, h4, .accordion-heading {
+h1, h2, h3, h4,
+.accordion-heading {
     font-family: Oswald;
     letter-spacing: 0%;
     text-transform: uppercase;
@@ -55,7 +56,8 @@ h1 {
     line-height: 132px;
 }
 
-h2, h3, h4, p, li, .accordion-heading {
+h2, h3, h4, p, li,
+.accordion-heading {
     font-weight: 400;
     font-style: Regular;
 }
@@ -82,7 +84,8 @@ p, li {
 
 /* background colors */
 
-#header, #hero, #portfolio, #faq, .footer__contacts {
+#header, #hero, #portfolio,
+#faq, .footer__contacts {
     background-color: var(--raisin-black);
     color:var(--white);
 }
@@ -147,6 +150,7 @@ p, li {
 }
 
 .hero-caption__text {
+    /* sideways-lr на vertical-lr  + rotate 180 */
     writing-mode: sideways-lr;
     font-family: Mulish;
     font-weight: 500;
