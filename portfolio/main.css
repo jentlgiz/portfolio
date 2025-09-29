@@ -567,12 +567,12 @@ p, li {
     display: flex;
     flex-direction: column;
     padding-top: 40px;
-    gap: 20px;
 }
 
 .footer__label {
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 .footer-nav__list {
@@ -596,11 +596,18 @@ p, li {
 }
 
 .footer__booking-box {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    padding: 0px 20px 0px 20px;
+    display: grid;
     justify-content: center;
+    grid-template-columns: 380px 380px 200px;
+    grid-template-rows: 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 0px;
+    height: 80px;
+}
+
+.footer__button {
+    width: 200px;
+    padding-left: 10px;
 }
 
 .footer__contacts {
