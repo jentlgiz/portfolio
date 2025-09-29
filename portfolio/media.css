@@ -10,6 +10,11 @@
         max-width: 768px;
     }
 
+    header, main, footer {
+        max-width: 768px;
+        overflow: hidden;
+    }
+
     /* header */
 
     .header-nav {
@@ -85,14 +90,15 @@
     /* about section */
 
     #about {
+        max-width: 768px;
         height: 1932px;
     }
 
     #about .container {
+        max-width: 768px;
         display: flex;
         flex-direction: column;
         gap: 40px;
-        padding: 60px 20px 60px 20px;
     }
 
     .about-content__img-1, .about-content__img-2 {
@@ -102,6 +108,7 @@
 
     .about-content__img-3  {
         display: none;
+        max-width: 728px;
     }
 
     .about-content__img-1 {
@@ -140,7 +147,8 @@
         padding-top: 40px;
     }
 
-/* price section  */
+    /* price section  */
+
     #price {
         width: 768px;
         height: 1256px;
@@ -153,11 +161,40 @@
         grid-template-rows: 1fr;
         grid-column-gap: 20px;
         grid-row-gap: 0px;
-        width: 728px;
+        width: 700px;
         height: 1020px;
         gap: 20px;
     }
+
+    /* faq section */
+
+    #faq .container {
+        max-width: 768px;
+        max-height: 840px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .footer__booking-box {
+        max-width: 768px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 256px 256px 200px;
+        grid-template-rows: 1fr;
+        grid-column-gap: 8px;
+        grid-row-gap: 0px;
+        height: 80px;
+    }
+
+    .button-wrapper {
+        max-width: 200px;
+    }
 }
+
+
 
 /* mobile */
 
