@@ -90,7 +90,38 @@ p, li {
     color:var(--white);
 }
 
-/* header */
+/* navigation - header, footer */
+
+.header-nav__list,
+.footer-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header-nav__list li,
+.footer-nav__list li {
+    font-family: Oswald;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.header-nav__list a:hover,
+.footer-nav__list a:hover {
+    color: var(--brilliant-red);
+    transition: 0.5s;
+}
+
+.header-nav__list a:active,
+.footer-nav__list a:active {
+    color: var(--brilliant-red);
+    transition: 0.5s;
+}
+
+/* header  */
 
 #header .container {
     display: flex;
@@ -99,33 +130,8 @@ p, li {
     padding: 18px 0px 18px 20px;
 }
 
-.header-nav__list, .footer-nav__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 .header-nav__list {
     width: 446px;
-}
-
-.header-nav__list li, .footer-nav__list li {
-    font-family: Oswald;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--white);
-}
-
-.header-nav__list a:hover, .footer-nav__list a:hover {
-    color: var(--brilliant-red);
-    transition: 0.5s;
-}
-
-.header-nav__list a:active, .footer-nav__list a:active {
-    color: var(--brilliant-red);
-    transition: 0.5s;
 }
 
 .button-nav {
@@ -150,7 +156,7 @@ p, li {
 }
 
 .hero-caption__text {
-    /* sideways-lr на vertical-lr  + rotate 180 */
+    /* sideways-lr на vertical-lr  + rotate 180, на будущее */
     writing-mode: sideways-lr;
     font-family: Mulish;
     font-weight: 500;
@@ -285,7 +291,9 @@ p, li {
     gap: 40px;
 }
 
-.about-content__img-1, .about-content__img-2, .about-content__img-3 {
+.about-content__img-1,
+.about-content__img-2,
+.about-content__img-3 {
     width: 440px;
     height: 440px;
 }
@@ -461,7 +469,8 @@ p, li {
     gap: 6px;
 }
 
-.price-card__button, .button-wrapper {
+.price-card__button,
+.button-wrapper {
     color:var(--white);
     display: flex;
     flex-direction: column;
