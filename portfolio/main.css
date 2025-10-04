@@ -92,6 +92,23 @@ p, li {
 
 /* navigation - header, footer */
 
+.media-nav__overlay {
+    display: none;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(48, 87, 216, 0.75);
+    pointer-events: none;
+}
+
+.media-nav__overlay.click {
+    display: block;
+    /* pointer-events: all; */
+}
+
 .header-nav__list,
 .footer-nav__list {
     display: flex;

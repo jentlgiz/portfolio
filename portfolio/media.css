@@ -72,6 +72,10 @@
 @media (max-width: 1439px) {
     /* general */
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     .container {
         max-width: 768px;
     }
@@ -94,6 +98,7 @@
     .button-nav {
         display: block;
         padding: 0px 20px 14px 20px;
+        background-color: var(--raisin-black);
     }
 
     .burger-nav {
@@ -286,6 +291,9 @@
 /* mobile */
 
 @media (max-width: 767px) {
+    html {
+        scroll-behavior: smooth;
+    }
 
     /* header */
 
