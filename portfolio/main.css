@@ -92,7 +92,7 @@ p, li {
 
 /* navigation - header, footer */
 
-.media-nav__overlay {
+/* .media-nav__overlay {
     display: none;
     position: absolute;
     z-index: 9;
@@ -106,8 +106,8 @@ p, li {
 
 .media-nav__overlay.click {
     display: block;
-    /* pointer-events: all; */
-}
+    pointer-events: all;
+} */
 
 .header-nav__list,
 .footer-nav__list {
@@ -151,9 +151,9 @@ p, li {
     width: 446px;
 }
 
-.button-nav {
+/* .button-nav {
     display: none;
-}
+} */
 
 /* hero section */
 

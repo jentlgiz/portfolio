@@ -95,7 +95,60 @@
         display: none;
     }
 
-    .button-nav {
+    .header-nav__button {
+        background-color: palevioletred;
+        display: block;
+        height: 60px;
+        width: 60px;
+    }
+
+    .media-nav-button {
+        padding: 0;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        position: relative;
+        z-index: 999;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .burger-button__line {
+        display: block;
+        position: relative;
+        width: 20px;
+        height: 2px;
+        background-color: transparent;
+    }
+
+    .burger-button__line::after,
+    .burger-button__line::before {
+        position: absolute;
+        content: '';
+        height: 2px;
+        background-color: var(--white);
+        /* transition: transform 0.6s ease-in, top 0.5s linear; */
+    }
+
+    .burger-button__line::before {
+        width: 12px;
+        top: -21px;
+        right: 0px;
+    }
+
+    .burger-button__line::after {
+        width: 20px;
+        top: -13px;
+        right: 0px;
+    }
+
+
+
+
+    /* .button-nav {
         display: block;
         padding: 0px 20px 14px 20px;
         background-color: var(--raisin-black);
@@ -117,7 +170,7 @@
         content: "";
         height: 2px;
         width: 20px;
-    }
+    } */
 
     /* hero section */
 
@@ -301,10 +354,10 @@
         padding-bottom: 2px;
     }
 
-    .button-nav {
+    /* .button-nav {
         display: block;
         padding: 0px 20px 11px 20px;
-    }
+    } */
 
     .logo-wrapper {
         padding-top: 5px;
