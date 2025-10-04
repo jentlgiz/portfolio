@@ -21,7 +21,7 @@ mediaNavButton.addEventListener('click', function () {
         turnOffMediaNav()
     });
 
-    mediaBarNav .addEventListener('click', function () {
+    mediaBarNav.addEventListener('click', function () {
         turnOffMediaNav()
     });
 
