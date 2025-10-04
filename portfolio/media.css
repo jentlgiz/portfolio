@@ -96,7 +96,6 @@
     }
 
     .header-nav__button {
-        background-color: palevioletred;
         display: block;
         height: 60px;
         width: 60px;
@@ -130,47 +129,38 @@
         content: '';
         height: 2px;
         background-color: var(--white);
-        /* transition: transform 0.6s ease-in, top 0.5s linear; */
     }
 
     .burger-button__line::before {
         width: 12px;
-        top: -21px;
+        top: -3px;
         right: 0px;
+        transition: transform 0.6s ease-in-out, top 0.5s linear;
     }
 
     .burger-button__line::after {
         width: 20px;
-        top: -13px;
+        top: 5px;
         right: 0px;
+        transition: transform 0.6s ease-in-out, top 0.5s linear;
     }
 
-
-
-
-    /* .button-nav {
-        display: block;
-        padding: 0px 20px 14px 20px;
-        background-color: var(--raisin-black);
+    .burger-button__line.active {
+        background-color: transparent;
     }
 
-    .burger-nav {
-        position: relative;
-        background-color: var(--white);
-        height: 2px;
-        width: 12px;
-        margin-top: 6px;
-    }
-
-    .burger-nav::before {
-        position: absolute;
-        bottom: -10px;
-        left: -7px;
-        background-color: var(--white);
-        content: "";
-        height: 2px;
+    .burger-button__line.active::before {
+        transform: rotate(45deg);
         width: 20px;
-    } */
+        top: 0px;
+        transition: transform 0.6s ease-in-out, top 0.5s linear;
+    }
+
+    .burger-button__line.active::after {
+        transform: rotate(-45deg);
+        top: 0px;
+        transition: transform 0.6s ease-in-out, top 0.5s linear;
+    }
 
     /* hero section */
 
