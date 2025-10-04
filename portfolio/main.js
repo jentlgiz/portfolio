@@ -30,7 +30,7 @@ mediaNavButton.addEventListener('click', function () {
     // turn off mobile navigation on link click
     mediaBarNav.querySelectorAll('a').forEach(function (link) {
         link.addEventListener('click', function () {
-            turnOffMediaNav();
+            turnOffMediaNav()
         });
     });
 
@@ -58,13 +58,29 @@ function turnOffMediaNav() {
 
 // accordion
 
-const accordionBoxHeader = document.querySelectorAll('.faq-content__accordion-box');
+const accordionBoxHeader = document.querySelectorAll('[data-box]');
+const accordionBoxAnswer = document.querySelectorAll('[data-box-content]');
+
 accordionBoxHeader.forEach(function (item) {
     item.addEventListener('click', function () {
-        console.log(this);
-        console.log(this.nextElementSibling);
-        this.nextElementSibling.classList.toggle('panel-answer__active');
+        accordionBoxAnswer.forEach(function (item) {
+            item.classList.add('panel-answer__active');
+        });
+        const accordionBox = document.querySelector('#' + this.dataset.box);
+        accordionBox.classList.remove('panel-answer__active');
     })
 })
+
+
+
+// accordionBoxHeader.forEach(function (item) {
+//     item.addEventListener('click', function () {
+//         accordionBoxAnswer.forEach(function (item) {
+//             item.classList.contains('panel-answer__active');
+//         });
+//         const accordionBox = document.querySelector('#' + this.dataset.box);
+//         accordionBox.classList.remove('panel-answer__active');
+//     })
+// })
 
 
