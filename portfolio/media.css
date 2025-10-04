@@ -165,6 +165,10 @@
         transition: transform 0.3s ease-in-out, top 0.3s linear;
     }
 
+    .no-scroll {
+        overflow: hidden;
+    }
+
     /* media navigation */
 
     .media-nav__overlay {
@@ -207,7 +211,8 @@
     }
 
     .media-nav__bar-content {
-        height: 655px;
+        height: 100%;
+        padding-top: 100px;
         display: flex;
         flex-direction: column;
         justify-content: center;

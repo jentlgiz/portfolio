@@ -14,6 +14,8 @@ mediaNavButton.addEventListener('click', function () {
     mediaOverlay.classList.toggle('active');
     // media navigation bar activation
     mediaBar.classList.toggle('active');
+    // no-scroll behind the open menu activation
+    document.body.classList.toggle('no-scroll');
 });
 
     // click on overlay around navigation
@@ -39,6 +41,11 @@ function turnOffMediaNav() {
         // turn off media navigation bar
         if (mediaBar.classList.contains('active')){
             mediaBar.classList.remove('active');
+        }
+
+        // turn off no-scroll
+        if (document.body.classList.contains('no-scroll')) {
+            document.body.classList.remove('no-scroll');
         }
 };
 
