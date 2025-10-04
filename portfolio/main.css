@@ -573,11 +573,11 @@ p, li {
     padding-bottom: 20px;
     border-bottom-width: 1px;
     border-bottom: 1px solid #FFFFFF;
-    display: none;
+    display: block;
 }
 
-.faq-content__accordion-display {
-    display: block;
+.faq-content__panel-answer.panel-answer__active {
+    display: none;
 }
 
 /* footer */

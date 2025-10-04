@@ -58,6 +58,13 @@ function turnOffMediaNav() {
 
 // accordion
 
-const accordionBoxHeader = document.querySelectorAll('.accordion-heading');
+const accordionBoxHeader = document.querySelectorAll('.faq-content__accordion-box');
+accordionBoxHeader.forEach(function (item) {
+    item.addEventListener('click', function () {
+        console.log(this);
+        console.log(this.nextElementSibling);
+        this.nextElementSibling.classList.toggle('panel-answer__active');
+    })
+})
 
 
