@@ -56,5 +56,8 @@ function turnOffMediaNav() {
         }
 };
 
+// accordion
+
+const accordionBoxHeader = document.querySelectorAll('.accordion-heading');
 
 
