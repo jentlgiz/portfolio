@@ -121,6 +121,10 @@ p, li {
     transition: 0.5s;
 }
 
+.media-nav {
+    display: none;
+}
+
 /* header  */
 
 #header .container {
@@ -128,6 +132,8 @@ p, li {
     justify-content: space-between;
     align-items: center;
     padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 18px;
 }
 
 .header-nav__list {

@@ -27,6 +27,13 @@ mediaNavButton.addEventListener('click', function () {
         turnOffMediaNav()
     });
 
+    // turn off mobile navigation on link click
+    mediaBarNav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+            turnOffMediaNav();
+        });
+    });
+
 function turnOffMediaNav() {
         // turn off a burger button
         if (mediaNavButtonLine.classList.contains('active')) {

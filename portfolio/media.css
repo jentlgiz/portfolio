@@ -1,6 +1,6 @@
 /* disabled hover effects */
 
-   @media (hover: hover) {
+   /* @media (hover: hover) {
     .price-card__wrapper:hover {
         border: 1px solid #FF3C3C;
         transition: 0.3s ease-in-out;
@@ -65,7 +65,7 @@
         transition: 0.3s ease-in-out;
         color:#000000;
     }
-}
+} */
 
 /* tablet */
 
@@ -170,6 +170,10 @@
     }
 
     /* media navigation */
+
+    .media-nav {
+        display: block;
+    }
 
     .media-nav__overlay {
         display: none;
@@ -423,10 +427,15 @@
         padding-bottom: 2px;
     }
 
-    /* .button-nav {
-        display: block;
-        padding: 0px 20px 11px 20px;
-    } */
+    .media-nav__bar {
+        right: -380px;
+        width: 380px;
+    }
+
+    .bar-content a {
+        height: 60px;
+        width: 380px;
+    }
 
     .logo-wrapper {
         padding-top: 5px;
