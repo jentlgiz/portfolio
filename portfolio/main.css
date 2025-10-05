@@ -514,6 +514,121 @@ p, li {
     text-transform: uppercase;
 }
 
+/* modal window */
+
+.price-card__modal-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #22222299;
+    /* display: none; */
+    width: 1440px;
+    height: 800px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.price-card__modal-active {
+    display: none;
+}
+
+.price-card__modal-window {
+    position: absolute;
+    /* left: 30%;
+    top: 30%; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 356px;
+    max-width: 500px;
+    padding: 0px 20px 60px 20px;
+}
+
+.modal-window__booking-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-window__button-wrapper {
+    color:var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.modal-window__button {
+    width: 380px;
+    height: 60px;
+    min-width: 200px;
+    padding: 0px 20px 0px 20px;
+}
+
+.modal-window__label {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.price-card__modal-button {
+    width: 480px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-button__line::after,
+.modal-button__line::before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    background-color: var(--eerie-black);
+}
+
+.modal-button__line {
+    display: block;
+    position: relative;
+    width: 12px;
+    height: 2px;
+}
+
+.modal-button__line::before {
+    width: 17px;
+    top: 0px;
+    right: 0px;
+    transform: rotate(-45deg);
+    background-color: var(--eerie-black);
+}
+
+.modal-button__line::after {
+    width: 17px;
+    top: 0px;
+    right: 0px;
+    transform: rotate(45deg);
+    background-color: var(--eerie-black);
+}
+
 /* faq section */
 
 #faq .container {

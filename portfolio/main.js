@@ -71,6 +71,13 @@ accordionBoxHeader.forEach(function (item) {
     })
 })
 
+// not finished
+
+
+// modal
+
+
+
 
 
 // accordionBoxHeader.forEach(function (item) {
