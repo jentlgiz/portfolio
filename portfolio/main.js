@@ -94,15 +94,18 @@ const modalCloseButton = document.querySelector('[data-close]');
 modalButton.forEach(function (item) {
     item.addEventListener('click', function () {
         modalButtonWindow.classList.remove('price-card__modal-active');
+        document.body.classList.add('no-scroll');
     });
 })
 
 modalCloseButton.addEventListener('click', function () {
     modalButtonWindow.classList.add('price-card__modal-active');
+    document.body.classList.remove('no-scroll');
 })
 
 modalButtonWindow.addEventListener('click', function () {
     modalButtonWindow.classList.add('price-card__modal-active');
+    document.body.classList.remove('no-scroll');
 })
 
 // modal - invisible to clicks inside window
@@ -111,9 +114,6 @@ modalButtonWindow.querySelector('.price-card__modal-window').addEventListener('c
     event.stopPropagation();
 })
 
-// turn off scroll
-
-// document.body.classList.add('no-scroll');
 
 
 
