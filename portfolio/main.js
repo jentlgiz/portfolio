@@ -70,11 +70,25 @@ accordionBoxHeader.forEach(function (item) {
         accordionBox.classList.remove('panel-answer__active');
     })
 })
-
 // not finished
 
 
 // modal
+
+const modalButton = document.querySelector('[data-modal]');
+// console.log(modalButton);
+
+modalButton.addEventListener('click', function () {
+    // console.log('Click');
+
+    const modalButtonWindow = document.querySelector('[data-modal-button]');
+    modalButtonWindow.classList.remove('price-card__modal-active');
+
+    const modalCloseButton = document.querySelector('[data-close]');
+    modalCloseButton.addEventListener('click', function () {
+        console.log('Click works');
+    })
+})
 
 
 
