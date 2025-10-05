@@ -70,37 +70,6 @@ accordionBoxHeader.forEach(function (item) {
         accordionBox.classList.remove('panel-answer__active');
     })
 })
-// not finished
-
-
-// modal
-
-const modalButton = document.querySelector('[data-modal]');
-const modalButtonWindow = document.querySelector('[data-modal-button]');
-const modalCloseButton = document.querySelector('[data-close]');
-
-modalButton.addEventListener('click', function () {
-    modalButtonWindow.classList.remove('price-card__modal-active');
-})
-
-modalCloseButton.addEventListener('click', function () {
-    modalButtonWindow.classList.add('price-card__modal-active');
-})
-
-modalButtonWindow.addEventListener('click', function () {
-    console.log('Close Modal');
-    modalButtonWindow.classList.add('price-card__modal-active');
-
-})
-
-// modal - invisible to clicks inside window
-
-modalButtonWindow.querySelector('.price-card__modal-window').addEventListener('click', function (event) {
-    event.stopPropagation();
-})
-
-
-
 
 // accordionBoxHeader.forEach(function (item) {
 //     item.addEventListener('click', function () {
@@ -111,5 +80,40 @@ modalButtonWindow.querySelector('.price-card__modal-window').addEventListener('c
 //         accordionBox.classList.remove('panel-answer__active');
 //     })
 // })
+
+// not finished
+
+
+// modal
+
+const modalButton = document.querySelectorAll('[data-modal]');
+console.log(modalButton);
+const modalButtonWindow = document.querySelector('[data-modal-button]');
+const modalCloseButton = document.querySelector('[data-close]');
+
+modalButton.forEach(function (item) {
+    item.addEventListener('click', function () {
+        modalButtonWindow.classList.remove('price-card__modal-active');
+    });
+})
+
+modalCloseButton.addEventListener('click', function () {
+    modalButtonWindow.classList.add('price-card__modal-active');
+})
+
+modalButtonWindow.addEventListener('click', function () {
+    modalButtonWindow.classList.add('price-card__modal-active');
+})
+
+// modal - invisible to clicks inside window
+
+modalButtonWindow.querySelector('.price-card__modal-window').addEventListener('click', function (event) {
+    event.stopPropagation();
+})
+
+// turn off scroll
+
+// document.body.classList.add('no-scroll');
+
 
 
