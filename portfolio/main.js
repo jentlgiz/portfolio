@@ -87,7 +87,7 @@ accordionBoxHeader.forEach(function (item) {
 // modal
 
 const modalButton = document.querySelectorAll('[data-modal]');
-console.log(modalButton);
+// console.log(modalButton);
 const modalButtonWindow = document.querySelector('[data-modal-button]');
 const modalCloseButton = document.querySelector('[data-close]');
 
@@ -115,5 +115,20 @@ modalButtonWindow.querySelector('.price-card__modal-window').addEventListener('c
 })
 
 
+// slider
 
+const slider = document.querySelector('.slider');
+const slideLeft = document.querySelector('.slider-left');
+const slideRight = document.querySelector('.slider-right');
+let slideIndex = 0;
 
+slideLeft.addEventListener('mousemove', slideLeftSide);
+slideRight.addEventListener('mousemove', slideRightSide);
+
+function slideLeftSide() {
+    slideIndex = (slideIndex - 1 + slider.scrollBy(250, 0));
+}
+
+function slideRightSide() {
+    slideIndex = (slideIndex - 1 + slider.scrollBy(-250, 0));
+}
