@@ -120,15 +120,23 @@ modalButtonWindow.querySelector('.price-card__modal-window').addEventListener('c
 const slider = document.querySelector('.slider');
 const slideLeft = document.querySelector('.slider-left');
 const slideRight = document.querySelector('.slider-right');
-let slideIndex = 0;
 
 slideLeft.addEventListener('mousemove', slideLeftSide);
 slideRight.addEventListener('mousemove', slideRightSide);
 
+
 function slideLeftSide() {
-    slideIndex = (slideIndex - 1 + slider.scrollBy(200, 0));
+    slider.scrollBy({
+      left: 200,
+      top: 0,
+      behavior: "auto"
+    });
 }
 
 function slideRightSide() {
-    slideIndex = (slideIndex - 1 + slider.scrollBy(-200, 0));
+    slider.scrollBy({
+      left: -200,
+      top: 0,
+      behavior: "auto"
+    });
 }
