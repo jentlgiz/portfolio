@@ -697,6 +697,10 @@ p, li {
     margin-right: 4px;
 }
 
+.accordion__button.active {
+    background-color: aquamarine;
+}
+
 .faq-content__panel-answer {
     height: 92px;
     justify-content: space-between;
@@ -706,7 +710,7 @@ p, li {
     display: block;
 }
 
-.faq-content__panel-answer.panel-answer__active {
+.panel__hidden {
     display: none;
 }
 

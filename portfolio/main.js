@@ -58,31 +58,20 @@ function turnOffMediaNav() {
 };
 
 // accordion
-const accordionBoxHeader = document.querySelectorAll('[data-box]');
-const accordionBoxAnswer = document.querySelectorAll('[data-box-content]');
+const accordionBoxHeaders = document.querySelectorAll('[data-box]');
+const accordionBoxAnswers = document.querySelectorAll('[data-box-content]');
 
-accordionBoxHeader.forEach(function (item) {
+accordionBoxHeaders.forEach(function (item) {
     item.addEventListener('click', function () {
-        accordionBoxAnswer.forEach(function (item) {
-            item.classList.add('panel-answer__active');
+        accordionBoxAnswers.forEach(function (item) {
+            item.classList.add('panel__hidden');
         });
         const accordionBox = document.querySelector('#' + this.dataset.box);
-        accordionBox.classList.remove('panel-answer__active');
+        accordionBox.classList.remove('panel__hidden');
     })
 })
 
-// accordionBoxHeader.forEach(function (item) {
-//     item.addEventListener('click', function () {
-//         accordionBoxAnswer.forEach(function (item) {
-//             item.classList.contains('panel-answer__active');
-//         });
-//         const accordionBox = document.querySelector('#' + this.dataset.box);
-//         accordionBox.classList.remove('panel-answer__active');
-//     })
-// })
-
 // not finished
-
 
 // modal
 const modalButton = document.querySelectorAll('[data-modal]');
@@ -129,18 +118,26 @@ slideRight.addEventListener('mousemove', slideRightSide);
 function slideLeftSide() {
     slider.scrollBy({
       left: 200,
-      top: 0,
-      behavior: "auto"
+      behavior: "smooth"
     });
 }
 
 function slideRightSide() {
     slider.scrollBy({
       left: -200,
-      top: 0,
-      behavior: "auto"
+      behavior: "smooth"
     });
 }
+
+// touch events
+
+slideLeft.addEventListener('touchmove', (event) => {
+  slideLeftSide();
+})
+
+slideRight.addEventListener('touchmove', (event) => {
+  slideRightSide();
+})
 
 // hovers
 
