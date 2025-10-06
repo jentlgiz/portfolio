@@ -18,6 +18,20 @@
     <title>portfolio</title>
   </head>
   <body>
+    <div class="media-nav__overlay"></div>
+    <div class="media-nav">
+      <div class="media-nav__bar">
+        <div class="media-nav__bar-content">
+          <div class="bar-content">
+            <a href="#about">about me</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#price">price</a>
+            <a href="#faq">faq</a>
+            <a href="#footer">contacts</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <header id="header">
       <div class="container">
         <div class="logo-wrapper">
@@ -45,8 +59,10 @@
             <li><a href="#footer">contacts</a></li>
           </ul>
         </nav>
-        <div class="button-nav">
-          <div class="burger-nav"></div>
+        <div class="header-nav__button">
+          <button type="button" class="media-nav-button">
+            <span class="burger-button__line"></span>
+          </button>
         </div>
       </div>
     </header>
@@ -149,77 +165,85 @@
         </div>
       </section>
       <section id="portfolio">
-        <div class="portfolio-content__wrapper">
-          <div class="portfolio-content">
-            <h2>my portfolio</h2>
-            <p>
-              Every shoot is a story. Here you’ll find portraits, love stories,
-              family sessions, and more.
-            </p>
-          </div>
-          </div>
-          <div class="portfolio-slider__container">
-            <div class="portfolio-slider__track-wrapper">
-              <div class="portfolio-slider__track">
-                <div class="portfolio-slider__wrapper">
-              <div class="portfolio-slider__img">
-                <img src="./image/png/img-14.png" alt="portfolio image">
-              </div>
-            </div>
-            <div class="portfolio-slider__wrapper">
-              <div class="portfolio-slider__img">
-                <img src="./image/png/img-21.png" alt="portfolio image">
-              </div>
-            </div>
-            <div class="portfolio-slider__wrapper">
-              <div class="portfolio-slider__img">
-                <img src="./image/png/img-22.png" alt="portfolio image">
-              </div>
-            </div>
-            <div class="portfolio-slider__wrapper">
-              <div class="portfolio-slider__img">
-                <img src="./image/png/img-20.png" alt="portfolio image">
-              </div>
-            </div>
-            <div class="portfolio-slider__wrapper">
-              <div class="portfolio-slider__img slider__img-17">
-                <img src="./image/png/img-17.png" alt="portfolio image">
-              </div>
-            </div>
-            <div class="portfolio-slider__wrapper">
-              <div class="portfolio-slider__img slider__img-1"></div>
-            </div>
-            <div class="portfolio-slider__wrapper">
-              <div class="portfolio-slider__img slider__img-2">
-                <img src="./image/png/img-2.png" alt="portfolio image">
-              </div>
-            </div>
-            <div class="portfolio-slider__wrapper">
-              <div class="portfolio-slider__img slider__img-5">
-                <img src="./image/png/img-5.png" alt="portfolio image">
-              </div>
-            </div>
-            <div class="portfolio-slider__wrapper">
-              <div class="portfolio-slider__img slider__img-7"></div>
-            </div>
-            <div class="portfolio-slider__wrapper">
-              <div class="portfolio-slider__img">
-                <img src="./image/png/img-8.png" alt="portfolio image">
-              </div>
-            </div>
-            <div class="portfolio-slider__wrapper">
-              <div class="portfolio-slider__img">
-                <img src="./image/png/img-9.png" alt="portfolio image">
-              </div>
-            </div>
-            <div class="portfolio-slider__wrapper">
-              <div class="portfolio-slider__img">
-                <img src="./image/png/img-12.png" alt="portfolio image">
-              </div>
-            </div>
-              </div>
+        <div class="container">
+          <div class="portfolio-content__wrapper">
+            <div class="portfolio-content">
+              <h2>my portfolio</h2>
+              <p>
+                Every shoot is a story. Here you’ll find portraits, love
+                stories, family sessions, and more.
+              </p>
             </div>
           </div>
+          <div class="slider-right"></div>
+          <div class="slider-left"></div>
+          <div class="slider">
+            <div class="slider-track__wrapper">
+              <div class="slider-track">
+                <div class="portfolio-slider__wrapper img-el">
+                  <div class="portfolio-slider__img">
+                    <img src="./image/png/img-14.png" alt="portfolio image">
+                  </div>
+                </div>
+                <div class="portfolio-slider__wrapper img-el">
+                  <div class="portfolio-slider__img">
+                    <img src="./image/png/img-21.png" alt="portfolio image">
+                  </div>
+                </div>
+                <div class="portfolio-slider__wrapper img-el">
+                  <div class="portfolio-slider__img">
+                    <img src="./image/png/img-22.png" alt="portfolio image">
+                  </div>
+                </div>
+                <div class="portfolio-slider__wrapper img-el-20">
+                  <div class="portfolio-slider__img">
+                    <img src="./image/png/img-20.png" alt="portfolio image">
+                  </div>
+                </div>
+                <div class="portfolio-slider__wrapper img-el">
+                  <div class="portfolio-slider__img">
+                    <img src="./image/png/img-17.png" alt="portfolio image">
+                  </div>
+                </div>
+                <div class="portfolio-slider__wrapper img-el">
+                  <div class="portfolio-slider__img">
+                    <img src="./image/png/img-1.png" alt="portfolio image">
+                  </div>
+                </div>
+                <div class="portfolio-slider__wrapper img-el">
+                  <div class="portfolio-slider__img">
+                    <img src="./image/png/img-2.png" alt="portfolio image">
+                  </div>
+                </div>
+                <div class="portfolio-slider__wrapper img-el">
+                  <div class="portfolio-slider__img">
+                    <img src="./image/png/img-5.png" alt="portfolio image">
+                  </div>
+                </div>
+                <div class="portfolio-slider__wrapper img-el">
+                  <div class="portfolio-slider__img">
+                    <img src="./image/png/img-7.png" alt="portfolio image">
+                  </div>
+                </div>
+                <div class="portfolio-slider__wrapper img-el">
+                  <div class="portfolio-slider__img">
+                    <img src="./image/png/img-8.png" alt="portfolio image">
+                  </div>
+                </div>
+                <div class="portfolio-slider__wrapper img-el">
+                  <div class="portfolio-slider__img">
+                    <img src="./image/png/img-9.png" alt="portfolio image">
+                  </div>
+                </div>
+                <div class="portfolio-slider__wrapper img-el">
+                  <div class="portfolio-slider__img">
+                    <img src="./image/png/img-12.png" alt="portfolio image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="price">
         <div class="container">
@@ -232,9 +256,9 @@
           </div>
           <div class="price-cards">
             <div class="price-card__wrapper">
-                <div class="price-card__outline">
-                    <h3>mini</h3>
-                    <nav class="price-card__list">
+              <div class="price-card__outline">
+                <h3>mini</h3>
+                <nav class="price-card__list">
                   <ul>
                     <li>
                       <svg
@@ -299,16 +323,16 @@
                   </ul>
                 </nav>
                 <h4>€150</h4>
+              </div>
+              <div class="price-card__button button-mini">
+                <p>For short sessions and quick results</p>
+                <button data-modal class="booking__button">book now</button>
+              </div>
             </div>
-            <div class="price-card__button button-mini">
-                    <p>For short sessions and quick results</p>
-                    <a href="#" class="booking__button">book now</a>
-                </div>
-          </div>
-          <div class="price-card__wrapper">
-                <div class="price-card__outline">
-                    <h3>Classic</h3>
-                    <nav class="price-card__list">
+            <div class="price-card__wrapper">
+              <div class="price-card__outline">
+                <h3>Classic</h3>
+                <nav class="price-card__list">
                   <ul>
                     <li>
                       <svg
@@ -397,16 +421,16 @@
                   </ul>
                 </nav>
                 <h4>€280</h4>
+              </div>
+              <div class="price-card__button">
+                <p>Perfect for couples, portraits, or lifestyle</p>
+                <button data-modal class="booking__button">book now</button>
+              </div>
             </div>
-            <div class="price-card__button">
-                    <p>Perfect for couples, portraits, or lifestyle</p>
-                    <a href="#" class="booking__button">book now</a>
-                </div>
-          </div>
-          <div class="price-card__wrapper">
-                <div class="price-card__outline">
-                    <h3>Story</h3>
-                    <nav class="price-card__list">
+            <div class="price-card__wrapper">
+              <div class="price-card__outline">
+                <h3>Story</h3>
+                <nav class="price-card__list">
                   <ul>
                     <li>
                       <svg
@@ -507,16 +531,16 @@
                   </ul>
                 </nav>
                 <h4>€450</h4>
+              </div>
+              <div class="price-card__button">
+                <p>For when you want to capture everything</p>
+                <button data-modal class="booking__button">book now</button>
+              </div>
             </div>
-            <div class="price-card__button">
-                    <p>For when you want to capture everything</p>
-                    <a href="#" class="booking__button">book now</a>
-                </div>
-          </div>
-          <div class="price-card__wrapper">
-                <div class="price-card__outline">
-                    <h3>Wedding</h3>
-                    <nav class="price-card__list">
+            <div class="price-card__wrapper">
+              <div class="price-card__outline">
+                <h3>Wedding</h3>
+                <nav class="price-card__list">
                   <ul>
                     <li>
                       <svg
@@ -589,7 +613,8 @@
                         <rect width="6" height="6" fill="#222222" />
                       </svg>
                       Delivery within 21 days
-                    </li><li>
+                    </li>
+                    <li>
                       <svg
                         width="6"
                         height="6"
@@ -600,7 +625,8 @@
                         <rect width="6" height="6" fill="#222222" />
                       </svg>
                       Extras: photo album, prints
-                    </li><li>
+                    </li>
+                    <li>
                       <svg
                         width="6"
                         height="6"
@@ -615,151 +641,356 @@
                   </ul>
                 </nav>
                 <h4>€900</h4>
+              </div>
+              <div class="price-card__button">
+                <p>Full-day or partial wedding coverage</p>
+                <button data-modal class="booking__button">book now</button>
+              </div>
             </div>
-            <div class="price-card__button">
-                    <p>Full-day or partial wedding coverage</p>
-                    <a href="#" class="booking__button">book now</a>
-                </div>
           </div>
         </div>
-    </div>
-    </section>
-    <section id="faq">
-      <div class="container">
-        <div class="faq-content__title">
-          <h2>Frequently Asked Questions</h2>
-          <p>Everything You Wanted to Ask (and a Bit More)</p>
-        </div>
-        <div class="faq-content__accordion-wrapper">
-          <div class="faq-content__accordion">
-          <button class="faq-content__accordion-box">
-            <span class="accordion-heading">How do I book a shoot?</span>
-            <span class="accordion__button">
-            <svg width="16" height="2" viewBox="0 0 16 2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M15 0.25C15.4142 0.25 15.75 0.585786 15.75 1C15.75 1.41421 15.4142 1.75 15 1.75H1C0.585786 1.75 0.25 1.41421 0.25 1C0.25 0.585786 0.585786 0.25 1 0.25H15Z" fill="currentColor"/>
-            </svg>
-          </span>
-          </button>
-          <div class="faq-content__panel-answer faq-content__accordion-display">
-            <p>Super simple – just message me through any convenient platform (Instagram, Telegram, WhatsApp, or the contact form on this site). We’ll discuss your preferred date, city, and session type. Once confirmed, I’ll reserve the date for you and send over preparation tips.</p>
+        <div
+          data-modal-button
+          class="price-card__modal-wrapper price-card__modal-active"
+        >
+          <div class="price-card__modal-window">
+            <div class="price-card__modal-button">
+              <button data-close type="button" class="modal-button">
+                <span class="modal-button__line"></span>
+              </button>
+            </div>
+            <div class="modal-window__label">
+              <h3>Like my portfolio? Sign up for a shoot!</h3>
+            </div>
+            <div class="modal-window__booking-box">
+              <div class="modal-window__input-wrapper">
+                <label for="input-name"></label>
+                <input
+                  type="text"
+                  id="input-name"
+                  name="name"
+                  placeholder="Your name..">
+              </div>
+              <div class="modal-window__input-wrapper">
+                <label for="input-phone"></label>
+                <input
+                  type="text"
+                  id="input-phone"
+                  name="phone"
+                  placeholder="+1">
+              </div>
+              <div class="modal-window__button-wrapper">
+                <a href="#" class="booking__button modal-window__button"
+                  >book now</a
+                >
+              </div>
+            </div>
           </div>
         </div>
-        <div class="faq-content__accordion">
-          <button class="faq-content__accordion-box">
-            <span class="accordion-heading">Can I choose the location myself?</span>
-            <span class="accordion__button">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 0.25C8.41421 0.25 8.75 0.585786 8.75 1V7.25H15C15.4142 7.25 15.75 7.58579 15.75 8C15.75 8.41421 15.4142 8.75 15 8.75H8.75V15C8.75 15.4142 8.41421 15.75 8 15.75C7.58579 15.75 7.25 15.4142 7.25 15V8.75H1C0.585786 8.75 0.25 8.41421 0.25 8C0.25 7.58579 0.585786 7.25 1 7.25H7.25V1C7.25 0.585786 7.58579 0.25 8 0.25Z" fill="currentColor"/>
-            </svg>
-          </span>
-          </button>
-          <div class="faq-content__panel-answer">
-            <p>Absolutely! If there’s a special place you love or have in mind — I’m happy to shoot there. If you’re unsure, I can suggest beautiful spots with great lighting and atmosphere, tailored to your vision and mood.</p>
+      </section>
+      <section id="faq">
+        <div class="container">
+          <div class="faq-content__title">
+            <h2>Frequently Asked Questions</h2>
+            <p>Everything You Wanted to Ask (and a Bit More)</p>
+          </div>
+          <div class="faq-content__accordion-wrapper">
+            <div class="faq-content__accordion">
+              <button data-box="box-1" class="faq-content__accordion-box">
+                <span class="accordion-heading">How do I book a shoot?</span>
+                <span class="accordion__button">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 0.25C8.41421 0.25 8.75 0.585786 8.75 1V7.25H15C15.4142 7.25 15.75 7.58579 15.75 8C15.75 8.41421 15.4142 8.75 15 8.75H8.75V15C8.75 15.4142 8.41421 15.75 8 15.75C7.58579 15.75 7.25 15.4142 7.25 15V8.75H1C0.585786 8.75 0.25 8.41421 0.25 8C0.25 7.58579 0.585786 7.25 1 7.25H7.25V1C7.25 0.585786 7.58579 0.25 8 0.25Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div
+                data-box-content
+                id="box-1"
+                class="faq-content__panel-answer"
+              >
+                <p>
+                  Super simple – just message me through any convenient platform
+                  (Instagram, Telegram, WhatsApp, or the contact form on this
+                  site). We’ll discuss your preferred date, city, and session
+                  type. Once confirmed, I’ll reserve the date for you and send
+                  over preparation tips.
+                </p>
+              </div>
+            </div>
+            <div class="faq-content__accordion">
+              <button data-box="box-2" class="faq-content__accordion-box">
+                <span class="accordion-heading"
+                  >Can I choose the location myself?</span
+                >
+                <span class="accordion__button">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 0.25C8.41421 0.25 8.75 0.585786 8.75 1V7.25H15C15.4142 7.25 15.75 7.58579 15.75 8C15.75 8.41421 15.4142 8.75 15 8.75H8.75V15C8.75 15.4142 8.41421 15.75 8 15.75C7.58579 15.75 7.25 15.4142 7.25 15V8.75H1C0.585786 8.75 0.25 8.41421 0.25 8C0.25 7.58579 0.585786 7.25 1 7.25H7.25V1C7.25 0.585786 7.58579 0.25 8 0.25Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div
+                data-box-content
+                id="box-2"
+                class="faq-content__panel-answer panel__hidden"
+              >
+                <p>
+                  Absolutely! If there’s a special place you love or have in
+                  mind — I’m happy to shoot there. If you’re unsure, I can
+                  suggest beautiful spots with great lighting and atmosphere,
+                  tailored to your vision and mood.
+                </p>
+              </div>
+            </div>
+            <div class="faq-content__accordion">
+              <button data-box="box-3" class="faq-content__accordion-box">
+                <span class="accordion-heading"
+                  >How long does the shoot take?</span
+                >
+                <span class="accordion__button">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 0.25C8.41421 0.25 8.75 0.585786 8.75 1V7.25H15C15.4142 7.25 15.75 7.58579 15.75 8C15.75 8.41421 15.4142 8.75 15 8.75H8.75V15C8.75 15.4142 8.41421 15.75 8 15.75C7.58579 15.75 7.25 15.4142 7.25 15V8.75H1C0.585786 8.75 0.25 8.41421 0.25 8C0.25 7.58579 0.585786 7.25 1 7.25H7.25V1C7.25 0.585786 7.58579 0.25 8 0.25Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div
+                data-box-content
+                id="box-3"
+                class="faq-content__panel-answer panel__hidden"
+              >
+                <p>
+                  That depends on the package you choose. On average, sessions
+                  last from 1 to 4 hours. We’ll plan the pace and type of shoot
+                  together — from relaxed city strolls and love stories to more
+                  dynamic or editorial sessions.
+                </p>
+              </div>
+            </div>
+            <div class="faq-content__accordion">
+              <button data-box="box-4" class="faq-content__accordion-box">
+                <span class="accordion-heading"
+                  >When will I receive the photos?</span
+                >
+                <span class="accordion__button">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 0.25C8.41421 0.25 8.75 0.585786 8.75 1V7.25H15C15.4142 7.25 15.75 7.58579 15.75 8C15.75 8.41421 15.4142 8.75 15 8.75H8.75V15C8.75 15.4142 8.41421 15.75 8 15.75C7.58579 15.75 7.25 15.4142 7.25 15V8.75H1C0.585786 8.75 0.25 8.41421 0.25 8C0.25 7.58579 0.585786 7.25 1 7.25H7.25V1C7.25 0.585786 7.58579 0.25 8 0.25Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div
+                data-box-content
+                id="box-4"
+                class="faq-content__panel-answer panel__hidden"
+              >
+                <p>
+                  You’ll receive your edited photos within 7–14 days. For event
+                  and wedding sessions — up to 30 days. I deliver them in a
+                  stylish online gallery, where you can download them in full
+                  quality or easily share with friends and family.
+                </p>
+              </div>
+            </div>
+            <div class="faq-content__accordion">
+              <button data-box="box-5" class="faq-content__accordion-box">
+                <span class="accordion-heading">Will you help me pose?</span>
+                <span class="accordion__button">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 0.25C8.41421 0.25 8.75 0.585786 8.75 1V7.25H15C15.4142 7.25 15.75 7.58579 15.75 8C15.75 8.41421 15.4142 8.75 15 8.75H8.75V15C8.75 15.4142 8.41421 15.75 8 15.75C7.58579 15.75 7.25 15.4142 7.25 15V8.75H1C0.585786 8.75 0.25 8.41421 0.25 8C0.25 7.58579 0.585786 7.25 1 7.25H7.25V1C7.25 0.585786 7.58579 0.25 8 0.25Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div
+                data-box-content
+                id="box-5"
+                class="faq-content__panel-answer panel__hidden"
+              >
+                <p>
+                  Definitely! I’ll guide you gently throughout the session —
+                  where to look, how to move, how to relax. The goal is to make
+                  you feel comfortable and natural. My approach is relaxed, and
+                  I’ll never force awkward poses. The result? Real, expressive,
+                  and beautiful photos.
+                </p>
+              </div>
+            </div>
+            <div class="faq-content__accordion">
+              <button data-box="box-6" class="faq-content__accordion-box">
+                <span class="accordion-heading">What should I wear?</span>
+                <span class="accordion__button">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 0.25C8.41421 0.25 8.75 0.585786 8.75 1V7.25H15C15.4142 7.25 15.75 7.58579 15.75 8C15.75 8.41421 15.4142 8.75 15 8.75H8.75V15C8.75 15.4142 8.41421 15.75 8 15.75C7.58579 15.75 7.25 15.4142 7.25 15V8.75H1C0.585786 8.75 0.25 8.41421 0.25 8C0.25 7.58579 0.585786 7.25 1 7.25H7.25V1C7.25 0.585786 7.58579 0.25 8 0.25Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div
+                data-box-content
+                id="box-6"
+                class="faq-content__panel-answer panel__hidden"
+              >
+                <p>
+                  After booking, I’ll send you a style guide with suggestions
+                  for colors, textures, and combinations. The most important
+                  thing is that you feel confident in your outfit. I’m also
+                  happy to help you coordinate looks or plan something cohesive
+                  for couples or groups.
+                </p>
+              </div>
+            </div>
+            <div class="faq-content__accordion">
+              <button data-box="box-7" class="faq-content__accordion-box">
+                <span class="accordion-heading"
+                  >Do you retouch the photos?</span
+                >
+                <span class="accordion__button">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 0.25C8.41421 0.25 8.75 0.585786 8.75 1V7.25H15C15.4142 7.25 15.75 7.58579 15.75 8C15.75 8.41421 15.4142 8.75 15 8.75H8.75V15C8.75 15.4142 8.41421 15.75 8 15.75C7.58579 15.75 7.25 15.4142 7.25 15V8.75H1C0.585786 8.75 0.25 8.41421 0.25 8C0.25 7.58579 0.585786 7.25 1 7.25H7.25V1C7.25 0.585786 7.58579 0.25 8 0.25Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div
+                data-box-content
+                id="box-7"
+                class="faq-content__panel-answer panel__hidden"
+              >
+                <p>
+                  Yes, all photos are color-corrected and lightly retouched. My
+                  editing style is clean and natural — no overdone filters or
+                  fake skin. Just you, at your best. Extra retouching is
+                  available upon request.
+                </p>
+              </div>
+            </div>
+            <div class="faq-content__accordion">
+              <button data-box="box-8" class="faq-content__accordion-box">
+                <span class="accordion-heading">Can I get the raw files?</span>
+                <span class="accordion__button">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 0.25C8.41421 0.25 8.75 0.585786 8.75 1V7.25H15C15.4142 7.25 15.75 7.58579 15.75 8C15.75 8.41421 15.4142 8.75 15 8.75H8.75V15C8.75 15.4142 8.41421 15.75 8 15.75C7.58579 15.75 7.25 15.4142 7.25 15V8.75H1C0.585786 8.75 0.25 8.41421 0.25 8C0.25 7.58579 0.585786 7.25 1 7.25H7.25V1C7.25 0.585786 7.58579 0.25 8 0.25Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div
+                data-box-content
+                id="box-8"
+                class="faq-content__panel-answer panel__hidden"
+              >
+                <p>
+                  I don’t deliver RAW files. My work includes not only shooting,
+                  but also careful selection and editing to create a complete
+                  and polished result. You’ll receive only the best images,
+                  ready for printing, sharing, or publishing.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="faq-content__accordion">
-          <button class="faq-content__accordion-box">
-            <span class="accordion-heading">How long does the shoot take?</span>
-            <span class="accordion__button">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 0.25C8.41421 0.25 8.75 0.585786 8.75 1V7.25H15C15.4142 7.25 15.75 7.58579 15.75 8C15.75 8.41421 15.4142 8.75 15 8.75H8.75V15C8.75 15.4142 8.41421 15.75 8 15.75C7.58579 15.75 7.25 15.4142 7.25 15V8.75H1C0.585786 8.75 0.25 8.41421 0.25 8C0.25 7.58579 0.585786 7.25 1 7.25H7.25V1C7.25 0.585786 7.58579 0.25 8 0.25Z" fill="currentColor"/>
-            </svg>
-          </span>
-          </button>
-          <div class="faq-content__panel-answer">
-            <p>That depends on the package you choose. On average, sessions last from 1 to 4 hours. We’ll plan the pace and type of shoot together — from relaxed city strolls and love stories to more dynamic or editorial sessions.</p>
-          </div>
-        </div>
-        <div class="faq-content__accordion">
-          <button class="faq-content__accordion-box">
-            <span class="accordion-heading">When will I receive the photos?</span>
-            <span class="accordion__button">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 0.25C8.41421 0.25 8.75 0.585786 8.75 1V7.25H15C15.4142 7.25 15.75 7.58579 15.75 8C15.75 8.41421 15.4142 8.75 15 8.75H8.75V15C8.75 15.4142 8.41421 15.75 8 15.75C7.58579 15.75 7.25 15.4142 7.25 15V8.75H1C0.585786 8.75 0.25 8.41421 0.25 8C0.25 7.58579 0.585786 7.25 1 7.25H7.25V1C7.25 0.585786 7.58579 0.25 8 0.25Z" fill="currentColor"/>
-            </svg>
-          </span>
-          </button>
-          <div class="faq-content__panel-answer">
-            <p>You’ll receive your edited photos within 7–14 days. For event and wedding sessions — up to 30 days. I deliver them in a stylish online gallery, where you can download them in full quality or easily share with friends and family.</p>
-          </div>
-        </div>
-        <div class="faq-content__accordion">
-          <button class="faq-content__accordion-box">
-            <span class="accordion-heading">Will you help me pose?</span>
-            <span class="accordion__button">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 0.25C8.41421 0.25 8.75 0.585786 8.75 1V7.25H15C15.4142 7.25 15.75 7.58579 15.75 8C15.75 8.41421 15.4142 8.75 15 8.75H8.75V15C8.75 15.4142 8.41421 15.75 8 15.75C7.58579 15.75 7.25 15.4142 7.25 15V8.75H1C0.585786 8.75 0.25 8.41421 0.25 8C0.25 7.58579 0.585786 7.25 1 7.25H7.25V1C7.25 0.585786 7.58579 0.25 8 0.25Z" fill="currentColor"/>
-            </svg>
-          </span>
-          </button>
-          <div class="faq-content__panel-answer">
-            <p>Definitely! I’ll guide you gently throughout the session — where to look, how to move, how to relax. The goal is to make you feel comfortable and natural. My approach is relaxed, and I’ll never force awkward poses. The result? Real, expressive, and beautiful photos.</p>
-          </div>
-        </div>
-        <div class="faq-content__accordion">
-          <button class="faq-content__accordion-box">
-            <span class="accordion-heading">What should I wear?</span>
-            <span class="accordion__button">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 0.25C8.41421 0.25 8.75 0.585786 8.75 1V7.25H15C15.4142 7.25 15.75 7.58579 15.75 8C15.75 8.41421 15.4142 8.75 15 8.75H8.75V15C8.75 15.4142 8.41421 15.75 8 15.75C7.58579 15.75 7.25 15.4142 7.25 15V8.75H1C0.585786 8.75 0.25 8.41421 0.25 8C0.25 7.58579 0.585786 7.25 1 7.25H7.25V1C7.25 0.585786 7.58579 0.25 8 0.25Z" fill="currentColor"/>
-            </svg>
-          </span>
-          </button>
-          <div class="faq-content__panel-answer">
-            <p>After booking, I’ll send you a style guide with suggestions for colors, textures, and combinations. The most important thing is that you feel confident in your outfit. I’m also happy to help you coordinate looks or plan something cohesive for couples or groups.</p>
-          </div>
-        </div>
-        <div class="faq-content__accordion">
-          <button class="faq-content__accordion-box">
-            <span class="accordion-heading">Do you retouch the photos?</span>
-            <span class="accordion__button">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 0.25C8.41421 0.25 8.75 0.585786 8.75 1V7.25H15C15.4142 7.25 15.75 7.58579 15.75 8C15.75 8.41421 15.4142 8.75 15 8.75H8.75V15C8.75 15.4142 8.41421 15.75 8 15.75C7.58579 15.75 7.25 15.4142 7.25 15V8.75H1C0.585786 8.75 0.25 8.41421 0.25 8C0.25 7.58579 0.585786 7.25 1 7.25H7.25V1C7.25 0.585786 7.58579 0.25 8 0.25Z" fill="currentColor"/>
-            </svg>
-          </span>
-          </button>
-          <div class="faq-content__panel-answer">
-            <p>Yes, all photos are color-corrected and lightly retouched. My editing style is clean and natural — no overdone filters or fake skin. Just you, at your best. Extra retouching is available upon request.</p>
-          </div>
-        </div>
-        <div class="faq-content__accordion">
-          <button class="faq-content__accordion-box">
-            <span class="accordion-heading">Can I get the raw files?</span>
-            <span class="accordion__button">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 0.25C8.41421 0.25 8.75 0.585786 8.75 1V7.25H15C15.4142 7.25 15.75 7.58579 15.75 8C15.75 8.41421 15.4142 8.75 15 8.75H8.75V15C8.75 15.4142 8.41421 15.75 8 15.75C7.58579 15.75 7.25 15.4142 7.25 15V8.75H1C0.585786 8.75 0.25 8.41421 0.25 8C0.25 7.58579 0.585786 7.25 1 7.25H7.25V1C7.25 0.585786 7.58579 0.25 8 0.25Z" fill="currentColor"/>
-            </svg>
-          </span>
-          </button>
-          <div class="faq-content__panel-answer">
-            <p>I don’t deliver RAW files. My work includes not only shooting, but also careful selection and editing to create a complete and polished result. You’ll receive only the best images, ready for printing, sharing, or publishing.</p>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
+      </section>
     </main>
     <footer id="footer">
       <div class="footer-container">
-        <div class="footer__label"><h3>Like my portfolio? Sign up for a shoot!</h3></div>
+        <div class="footer__label">
+          <h3>Like my portfolio? Sign up for a shoot!</h3>
+        </div>
         <div class="footer__booking-box">
-            <div class="input-wrapper">
-              <label for="input-name"></label>
-              <input type="text" id="input-name" name="name" placeholder="Your name..">
-            </div>
-            <div class="input-wrapper">
-              <label for="input-phone"></label>
-              <input type="text" id="input-phone" name="phone" placeholder="+1">
-            </div>
-          <div class="button-wrapper">
-            <a href="#" class="booking__button footer__button">book now</a>
+          <div class="input-wrapper">
+            <label for="footer_input-name"></label>
+            <input
+              type="text"
+              id="footer_input-name"
+              name="name"
+              placeholder="Your name..">
           </div>
+          <div class="input-wrapper">
+            <label for="footer_input-phone"></label>
+            <input type="text" id="footer_input-phone" name="phone" placeholder="+1">
+          </div>
+          <button class="booking__button footer__button">book now</button>
         </div>
         <div class="footer__contacts">
           <nav class="footer-nav">
-          <ul class="footer-nav__list">
-            <li><a href="#">instagram</a></li>
-            <li><a href="#">telegram</a></li>
-            <li><a href="#">whatsapp</a></li>
-            <li><a href="#">Europe</a></li>
-            <li><a href="#">+1 234 9843572</a></li>
-          </ul>
-        </nav>
+            <ul class="footer-nav__list">
+              <li><a href="#">instagram</a></li>
+              <li><a href="#">telegram</a></li>
+              <li><a href="#">whatsapp</a></li>
+              <li><a href="#">Europe</a></li>
+              <li><a href="#">+1 234 9843572</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
