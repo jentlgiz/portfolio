@@ -452,7 +452,6 @@ p, li {
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 24px;
-    cursor: pointer;
 }
 
 .price-card__wrapper:hover {
@@ -607,6 +606,12 @@ p, li {
     align-items: center;
 }
 
+.modal-button:hover {
+    background-color: #FF3C3C;
+    transition: 0.4s ease-in-out;
+    color:var(--eerie-black);
+}
+
 .modal-button__line::after,
 .modal-button__line::before {
     position: absolute;
@@ -759,7 +764,7 @@ p, li {
     padding: 20px;
 }
 
-.button-wrapper:hover .booking__button {
+.booking__button:hover {
     background-color: #FF3C3C;
     transition: 0.4s ease-in-out;
     color:var(--eerie-black);

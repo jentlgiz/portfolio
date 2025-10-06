@@ -1,3 +1,5 @@
+"use strict"
+
 // closing and opening burger menu
 
 const mediaNavButton = document.querySelector('.media-nav-button');
