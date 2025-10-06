@@ -651,4 +651,34 @@
         max-width: 340px;
         border: 1px solid #222222;
     }
+
+    .price-card__modal-window {
+        width: 340px;
+        height: 384px;
+        padding: 0px 20px 60px 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input[type=text] {
+        width: 300px;
+    }
+
+    .modal-window__button {
+        width: 300px;
+        height: 60px;
+        min-width: 200px;
+        padding: 0px 20px 0px 20px;
+    }
+
+    .price-card__modal-button {
+        width: 320px;
+    }
+
+    .modal-window__label {
+        width: 280px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
 }

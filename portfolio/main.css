@@ -606,7 +606,8 @@ p, li {
     align-items: center;
 }
 
-.modal-button:hover {
+.modal-button__line:hover::after,
+.modal-button__line:hover::before {
     background-color: #FF3C3C;
     transition: 0.4s ease-in-out;
     color:var(--eerie-black);

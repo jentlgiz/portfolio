@@ -1,7 +1,6 @@
 "use strict"
 
 // closing and opening burger menu
-
 const mediaNavButton = document.querySelector('.media-nav-button');
 const mediaNavButtonLine = document.querySelector('.burger-button__line');
 const mediaOverlay = document.querySelector('.media-nav__overlay');
@@ -59,7 +58,6 @@ function turnOffMediaNav() {
 };
 
 // accordion
-
 const accordionBoxHeader = document.querySelectorAll('[data-box]');
 const accordionBoxAnswer = document.querySelectorAll('[data-box-content]');
 
@@ -87,17 +85,21 @@ accordionBoxHeader.forEach(function (item) {
 
 
 // modal
-
 const modalButton = document.querySelectorAll('[data-modal]');
-// console.log(modalButton);
 const modalButtonWindow = document.querySelector('[data-modal-button]');
 const modalCloseButton = document.querySelector('[data-close]');
+const modalFooterButton = document.querySelector('.footer__button');
 
 modalButton.forEach(function (item) {
     item.addEventListener('click', function () {
         modalButtonWindow.classList.remove('price-card__modal-active');
         document.body.classList.add('no-scroll');
     });
+})
+
+modalFooterButton.addEventListener('click', function () {
+    modalButtonWindow.classList.remove('price-card__modal-active');
+    document.body.classList.add('no-scroll');
 })
 
 modalCloseButton.addEventListener('click', function () {
@@ -111,21 +113,18 @@ modalButtonWindow.addEventListener('click', function () {
 })
 
 // modal - invisible to clicks inside window
-
 modalButtonWindow.querySelector('.price-card__modal-window').addEventListener('click', function (event) {
     event.stopPropagation();
 })
 
 
 // slider
-
 const slider = document.querySelector('.slider');
 const slideLeft = document.querySelector('.slider-left');
 const slideRight = document.querySelector('.slider-right');
 
 slideLeft.addEventListener('mousemove', slideLeftSide);
 slideRight.addEventListener('mousemove', slideRightSide);
-
 
 function slideLeftSide() {
     slider.scrollBy({
@@ -142,3 +141,6 @@ function slideRightSide() {
       behavior: "auto"
     });
 }
+
+// hovers
+
