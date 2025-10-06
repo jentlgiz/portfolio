@@ -341,7 +341,11 @@ p, li {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#portfolio .container {
     position: relative;
+    height: 654px;
 }
 
 .portfolio-content__wrapper {
@@ -359,43 +363,46 @@ p, li {
 /* portfolio section slider */
 
 .slider {
-    width: 1440px;
-    height: 654px;
-    position: relative;
+    width: 1400px;
+    height: 554px;
     overflow: hidden;
     display: flex;
-    justify-content: center;
     align-items: center;
+    position: absolute;
 }
 
 .slider-right {
     width: 420px;
-    height: 654px;
+    height: 574px;
     position: absolute;
-    left: 40px;
+    left: 0px;
     z-index: 999;
-    bottom: 60px;
+    bottom: -20px;
 }
 
 .slider-left {
     width: 420px;
-    height: 654px;
+    height: 574px;
     position: absolute;
-    right: 40px;
+    right: 0px;
     z-index: 999;
-    bottom: 60px;
+    bottom: -20px;
+}
+
+.slider-track__wrapper {
+    position: absolute;
+    top: 20px;
 }
 
 .slider-track {
-    position: absolute;
-    top: 20px;
     display: grid;
-    justify-content: center;
     align-items: center;
     grid-template-columns: 400px 220px 280px 400px 280px 220px 280px 400px 220px 280px 280px 400px;
     grid-template-rows: 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* pricing section */
@@ -522,7 +529,6 @@ p, li {
 
 .price-card__modal-wrapper {
     background-color: #22222299;
-    /* position: absolute; */
     position: fixed;
     overflow: auto;
     top: 0;

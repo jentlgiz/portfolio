@@ -126,9 +126,9 @@ slideLeft.addEventListener('mousemove', slideLeftSide);
 slideRight.addEventListener('mousemove', slideRightSide);
 
 function slideLeftSide() {
-    slideIndex = (slideIndex - 1 + slider.scrollBy(250, 0));
+    slideIndex = (slideIndex - 1 + slider.scrollBy(200, 0));
 }
 
 function slideRightSide() {
-    slideIndex = (slideIndex - 1 + slider.scrollBy(-250, 0));
+    slideIndex = (slideIndex - 1 + slider.scrollBy(-200, 0));
 }
