@@ -1,5 +1,9 @@
 /* general  */
 
+.no-scroll {
+    overflow: hidden;
+}
+
 :root {
     --white: #FFFFFF; /* text */
     --raisin-black: #222222; /* background */
@@ -121,20 +125,26 @@ p, li {
     transition: 0.5s;
 }
 
+.media-nav {
+    display: none;
+}
+
 /* header  */
 
 #header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 0px 18px 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 18px;
 }
 
 .header-nav__list {
     width: 446px;
 }
 
-.button-nav {
+.header-nav__button  {
     display: none;
 }
 
@@ -328,11 +338,19 @@ p, li {
 
 #portfolio {
     padding: 60px 20px 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#portfolio .container {
+    position: relative;
+    height: 654px;
 }
 
 .portfolio-content__wrapper {
     margin: 0 auto;
-    max-width: 1400px;
+    width: 1400px;
 }
 
 .portfolio-content {
@@ -344,53 +362,47 @@ p, li {
 
 /* portfolio section slider */
 
-.portfolio-slider__container {
-    max-width: 4200px;
+.slider {
+    width: 1400px;
+    height: 554px;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
+    align-items: center;
+    position: absolute;
 }
 
-.portfolio-slider__track-wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-top: 40px;
+.slider-right {
+    width: 420px;
+    height: 574px;
+    position: absolute;
+    left: 0px;
+    z-index: 999;
+    bottom: -20px;
 }
 
-.portfolio-slider__track {
+.slider-left {
+    width: 420px;
+    height: 574px;
+    position: absolute;
+    right: 0px;
+    z-index: 999;
+    bottom: -20px;
+}
+
+.slider-track__wrapper {
+    position: absolute;
+    top: 20px;
+}
+
+.slider-track {
     display: grid;
-    justify-content: center;
+    align-items: center;
     grid-template-columns: 400px 220px 280px 400px 280px 220px 280px 400px 220px 280px 280px 400px;
     grid-template-rows: 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 0px;
-}
-
-.slider__img-17 {
-    padding-top: 120px;
-}
-
-.slider__img-1, .slider__img-7 {
-    height: 220px;
-    width: 220px;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center -40px;
-    margin-top: 218px;
-}
-
-.slider__img-1 {
-    background-image: url(./image/png/img-1.png);
-}
-
-.slider__img-5 {
-    padding-top: 120px;
-}
-
-.slider__img-7 {
-    background-image: url(./image/png/img-7.png);
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* pricing section */
@@ -440,7 +452,6 @@ p, li {
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 24px;
-    cursor: pointer;
 }
 
 .price-card__wrapper:hover {
@@ -490,10 +501,15 @@ p, li {
 }
 
 .booking__button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #1E1E1E;
+    color: var(--white);
     width: 272px;
     height: 60px;
     min-width: 200px;
@@ -506,6 +522,126 @@ p, li {
     line-height: 24px;
     text-align: center;
     text-transform: uppercase;
+}
+
+/* modal window */
+
+.price-card__modal-wrapper {
+    background-color: #22222299;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 999;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.price-card__modal-active {
+    display: none;
+}
+
+.price-card__modal-window {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 356px;
+    padding: 0px 20px 60px 20px;
+}
+
+.modal-window__booking-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-window__button-wrapper {
+    color:var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.modal-window__button {
+    width: 380px;
+    height: 60px;
+    min-width: 200px;
+    padding: 0px 20px 0px 20px;
+}
+
+.modal-window__label {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.price-card__modal-button {
+    width: 480px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-button__line:hover::after,
+.modal-button__line:hover::before {
+    background-color: #FF3C3C;
+    transition: 0.4s ease-in-out;
+    color:var(--eerie-black);
+}
+
+.modal-button__line::after,
+.modal-button__line::before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    background-color: var(--eerie-black);
+}
+
+.modal-button__line {
+    display: block;
+    position: relative;
+    width: 12px;
+    height: 2px;
+}
+
+.modal-button__line::before {
+    width: 17px;
+    top: 0px;
+    right: 0px;
+    transform: rotate(-45deg);
+    background-color: var(--eerie-black);
+}
+
+.modal-button__line::after {
+    width: 17px;
+    top: 0px;
+    right: 0px;
+    transform: rotate(45deg);
+    background-color: var(--eerie-black);
 }
 
 /* faq section */
@@ -561,17 +697,21 @@ p, li {
     margin-right: 4px;
 }
 
+.accordion__button.active {
+    background-color: aquamarine;
+}
+
 .faq-content__panel-answer {
     height: 92px;
     justify-content: space-between;
     padding-bottom: 20px;
     border-bottom-width: 1px;
     border-bottom: 1px solid #FFFFFF;
-    display: none;
+    display: block;
 }
 
-.faq-content__accordion-display {
-    display: block;
+.panel__hidden {
+    display: none;
 }
 
 /* footer */
@@ -629,7 +769,7 @@ p, li {
     padding: 20px;
 }
 
-.button-wrapper:hover .booking__button {
+.booking__button:hover {
     background-color: #FF3C3C;
     transition: 0.4s ease-in-out;
     color:var(--eerie-black);
